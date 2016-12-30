@@ -28,6 +28,14 @@ class LoginVC: UIViewController {
 
     func kakaoClicked(){
         print("kakao clicked");
+        /*if KOSession.shared().isOpen(){
+            KOSession.shared().close()
+        }*/
+        KOSession.shared().open { (error) in
+            if KOSession.shared().isOpen(){
+                print("done")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
