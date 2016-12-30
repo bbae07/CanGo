@@ -10,10 +10,24 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    var kakaoBtn:UIButton? = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.KakaoBtn = KOLoginButton()
+        self.kakaoBtn = KOLoginButton(frame: CGRect(x: 20, y: 20, width: 200, height: 60))
+        //self.kakaoBtn?.frame = CGRect(15, 54, 300, 500)
+        self.kakaoBtn?.backgroundColor = UIColor.black
+
+        self.kakaoBtn?.addTarget(self, action: #selector(kakaoClicked), for: .touchUpInside)
+        self.view.addSubview(self.kakaoBtn!)
+
         
         // Do any additional setup after loading the view.
+    }
+
+    func kakaoClicked(){
+        print("kakao clicked");
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,7 +47,7 @@ class LoginVC: UIViewController {
     @IBAction func KakaoLogIn(_ sender: UIButton) {
     }
     
-    @IBOutlet weak var KakaoBtn: UIButton!
+    //@IBOutlet weak var KakaoBtn: UIButton!
     /*
     // MARK: - Navigation
 
