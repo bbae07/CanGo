@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967569069FDA859109C00649 /* Pods_CanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B16366ECD24285163B821 /* Pods_CanGo.framework */; };
+		F1083E361E160626000BA60D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1083E351E160626000BA60D /* LoginVC.swift */; };
+		F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E381E160A45000BA60D /* UIKit.framework */; };
+		F1083E3B1E160A4D000BA60D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E3A1E160A4D000BA60D /* Foundation.framework */; };
+		F1083E3D1E160A66000BA60D /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E3C1E160A66000BA60D /* KakaoOpenSDK.framework */; };
 		F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */; };
 		F1A42D521E15F0FF001AB20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D501E15F0FF001AB20F /* Main.storyboard */; };
 		F1A42D541E15F0FF001AB20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D531E15F0FF001AB20F /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD9B16366ECD24285163B821 /* Pods_CanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1083E351E160626000BA60D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F1083E381E160A45000BA60D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1083E3A1E160A4D000BA60D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1083E3C1E160A66000BA60D /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = "../../../Downloads/kakao-ios-sdk-1.0.70/KakaoOpenSDK.framework"; sourceTree = "<group>"; };
 		F1A42D491E15F0FF001AB20F /* CanGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A42D511E15F0FF001AB20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +55,9 @@
 		F1A42D681E15F0FF001AB20F /* CanGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanGoUITests.swift; sourceTree = "<group>"; };
 		F1A42D6E1E15F0FF001AB20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F6A1AB1E160CD0002D9742 /* Kakao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kakao.h; sourceTree = "<group>"; };
+		F2927CEC5D858F3988519EBE /* Pods-CanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanGo/Pods-CanGo.release.xcconfig"; sourceTree = "<group>"; };
+		FD349EF39679CF5778397CC3 /* Pods-CanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanGo/Pods-CanGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1083E3B1E160A4D000BA60D /* Foundation.framework in Frameworks */,
+				F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */,
+				F1083E3D1E160A66000BA60D /* KakaoOpenSDK.framework in Frameworks */,
+				967569069FDA859109C00649 /* Pods_CanGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +89,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		437D690C0E038521F359AAC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD349EF39679CF5778397CC3 /* Pods-CanGo.debug.xcconfig */,
+				F2927CEC5D858F3988519EBE /* Pods-CanGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1083E371E160A45000BA60D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1083E3C1E160A66000BA60D /* KakaoOpenSDK.framework */,
+				F1083E3A1E160A4D000BA60D /* Foundation.framework */,
+				F1083E381E160A45000BA60D /* UIKit.framework */,
+				DD9B16366ECD24285163B821 /* Pods_CanGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1A42D401E15F0FF001AB20F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +116,8 @@
 				F1A42D601E15F0FF001AB20F /* CanGoTests */,
 				F1A42D6B1E15F0FF001AB20F /* CanGoUITests */,
 				F1A42D4A1E15F0FF001AB20F /* Products */,
+				F1083E371E160A45000BA60D /* Frameworks */,
+				437D690C0E038521F359AAC2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +139,8 @@
 				F1A42D531E15F0FF001AB20F /* Assets.xcassets */,
 				F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */,
 				F1A42D581E15F0FF001AB20F /* Info.plist */,
+				F1083E351E160626000BA60D /* LoginVC.swift */,
+				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
 			);
 			path = CanGo;
 			sourceTree = "<group>";
@@ -129,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1A42D711E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGo" */;
 			buildPhases = (
+				816409265EEA2B809E7AA184 /* [CP] Check Pods Manifest.lock */,
 				F1A42D451E15F0FF001AB20F /* Sources */,
 				F1A42D461E15F0FF001AB20F /* Frameworks */,
 				F1A42D471E15F0FF001AB20F /* Resources */,
+				2509AD3DFB972A71E0168D22 /* [CP] Embed Pods Frameworks */,
+				E0D689873CB07FD03B6147B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +298,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2509AD3DFB972A71E0168D22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanGo/Pods-CanGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816409265EEA2B809E7AA184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D689873CB07FD03B6147B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanGo/Pods-CanGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1A42D451E15F0FF001AB20F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1083E361E160626000BA60D /* LoginVC.swift in Sources */,
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +452,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = CanGo/Kakao.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -400,6 +494,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = CanGo/Kakao.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -407,11 +502,16 @@
 		};
 		F1A42D721E15F0FF001AB20F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD349EF39679CF5778397CC3 /* Pods-CanGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
 				INFOPLIST_FILE = CanGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -420,11 +520,16 @@
 		};
 		F1A42D731E15F0FF001AB20F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2927CEC5D858F3988519EBE /* Pods-CanGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
 				INFOPLIST_FILE = CanGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -508,6 +613,7 @@
 				F1A42D731E15F0FF001AB20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1A42D741E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGoTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +622,7 @@
 				F1A42D761E15F0FF001AB20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1A42D771E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGoUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +631,7 @@
 				F1A42D791E15F0FF001AB20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

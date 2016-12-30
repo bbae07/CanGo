@@ -9,7 +9,7 @@
         <!--login-->
         <scene sceneID="dln-Qv-HGo">
             <objects>
-                <viewController title="login" id="vOc-0z-zm3" sceneMemberID="viewController">
+                <viewController title="login" id="vOc-0z-zm3" customClass="LoginVC" customModule="CanGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WWO-DV-dqN"/>
                         <viewControllerLayoutGuide type="bottom" id="H6h-HN-86d"/>
@@ -20,10 +20,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app2_0" translatesAutoresizingMaskIntoConstraints="NO" id="ehl-hP-o0a">
                                 <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app2_1" translatesAutoresizingMaskIntoConstraints="NO" id="Cmm-qV-Bc0">
-                                <frame key="frameInset" minX="78" minY="91" width="219" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app2_2" translatesAutoresizingMaskIntoConstraints="NO" id="ai4-zl-6BU">
@@ -52,6 +48,9 @@
                                 <frame key="frameInset" minX="11" minY="397" width="353" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="app2_4"/>
+                                <connections>
+                                    <action selector="LogIn:" destination="vOc-0z-zm3" eventType="touchUpInside" id="mPA-57-S7E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0u-sB-ro7">
                                 <frame key="frameInset" minX="67" minY="455" width="46" height="30"/>
@@ -89,10 +88,22 @@
                                 <frame key="frameInset" minX="43" minY="526" width="288" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="kakao_account_login_btn_large_narrow"/>
+                                <connections>
+                                    <action selector="KakaoLogIn:" destination="vOc-0z-zm3" eventType="touchUpInside" id="gYF-T0-X6D"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app2_1" translatesAutoresizingMaskIntoConstraints="NO" id="Cmm-qV-Bc0">
+                                <frame key="frameInset" minX="93" minY="91" width="188" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ID" destination="Njp-zP-fHb" id="ZNj-dF-bmJ"/>
+                        <outlet property="KakaoBtn" destination="nuF-0i-KUc" id="vBw-f4-GIC"/>
+                        <outlet property="PWD" destination="TuS-Gn-GCJ" id="kfV-bc-qUb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mO4-Sn-E8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,7 +202,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-2C-7rw">
-                                <frame key="frameInset" minX="50.00%" minY="89.47%" width="321" height="52"/>
+                                <frame key="frameInset" minX="50.00%" minY="89.38%" width="321" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="app6_8"/>
                             </button>
@@ -213,7 +224,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4iR-ZU-yBt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="vVe-4h-UEn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vVe-4h-UEn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.15294117647058825" green="0.73333333333333328" blue="0.70196078431372544" alpha="0.61877693965517244" colorSpace="calibratedRGB"/>
