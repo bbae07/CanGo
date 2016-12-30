@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */; };
+		F1A42D4F1E15F0FF001AB20F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D4E1E15F0FF001AB20F /* ViewController.swift */; };
+		F1A42D521E15F0FF001AB20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D501E15F0FF001AB20F /* Main.storyboard */; };
+		F1A42D541E15F0FF001AB20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D531E15F0FF001AB20F /* Assets.xcassets */; };
+		F1A42D571E15F0FF001AB20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */; };
+		F1A42D621E15F0FF001AB20F /* CanGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D611E15F0FF001AB20F /* CanGoTests.swift */; };
+		F1A42D6D1E15F0FF001AB20F /* CanGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A42D5E1E15F0FF001AB20F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A42D411E15F0FF001AB20F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A42D481E15F0FF001AB20F;
+			remoteInfo = CanGo;
+		};
+		F1A42D691E15F0FF001AB20F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A42D411E15F0FF001AB20F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A42D481E15F0FF001AB20F;
+			remoteInfo = CanGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1A42D491E15F0FF001AB20F /* CanGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1A42D4E1E15F0FF001AB20F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1A42D511E15F0FF001AB20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1A42D531E15F0FF001AB20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1A42D561E15F0FF001AB20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1A42D581E15F0FF001AB20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A42D5D1E15F0FF001AB20F /* CanGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A42D611E15F0FF001AB20F /* CanGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanGoTests.swift; sourceTree = "<group>"; };
+		F1A42D631E15F0FF001AB20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A42D681E15F0FF001AB20F /* CanGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanGoUITests.swift; sourceTree = "<group>"; };
+		F1A42D6E1E15F0FF001AB20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A42D461E15F0FF001AB20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A42D5A1E15F0FF001AB20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A42D651E15F0FF001AB20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1A42D401E15F0FF001AB20F = {
+			isa = PBXGroup;
+			children = (
+				F1A42D4B1E15F0FF001AB20F /* CanGo */,
+				F1A42D601E15F0FF001AB20F /* CanGoTests */,
+				F1A42D6B1E15F0FF001AB20F /* CanGoUITests */,
+				F1A42D4A1E15F0FF001AB20F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A42D4A1E15F0FF001AB20F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A42D491E15F0FF001AB20F /* CanGo.app */,
+				F1A42D5D1E15F0FF001AB20F /* CanGoTests.xctest */,
+				F1A42D681E15F0FF001AB20F /* CanGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A42D4B1E15F0FF001AB20F /* CanGo */ = {
+			isa = PBXGroup;
+			children = (
+				F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */,
+				F1A42D4E1E15F0FF001AB20F /* ViewController.swift */,
+				F1A42D501E15F0FF001AB20F /* Main.storyboard */,
+				F1A42D531E15F0FF001AB20F /* Assets.xcassets */,
+				F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */,
+				F1A42D581E15F0FF001AB20F /* Info.plist */,
+			);
+			path = CanGo;
+			sourceTree = "<group>";
+		};
+		F1A42D601E15F0FF001AB20F /* CanGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A42D611E15F0FF001AB20F /* CanGoTests.swift */,
+				F1A42D631E15F0FF001AB20F /* Info.plist */,
+			);
+			path = CanGoTests;
+			sourceTree = "<group>";
+		};
+		F1A42D6B1E15F0FF001AB20F /* CanGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */,
+				F1A42D6E1E15F0FF001AB20F /* Info.plist */,
+			);
+			path = CanGoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A42D481E15F0FF001AB20F /* CanGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A42D711E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGo" */;
+			buildPhases = (
+				F1A42D451E15F0FF001AB20F /* Sources */,
+				F1A42D461E15F0FF001AB20F /* Frameworks */,
+				F1A42D471E15F0FF001AB20F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanGo;
+			productName = CanGo;
+			productReference = F1A42D491E15F0FF001AB20F /* CanGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A42D5C1E15F0FF001AB20F /* CanGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A42D741E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGoTests" */;
+			buildPhases = (
+				F1A42D591E15F0FF001AB20F /* Sources */,
+				F1A42D5A1E15F0FF001AB20F /* Frameworks */,
+				F1A42D5B1E15F0FF001AB20F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A42D5F1E15F0FF001AB20F /* PBXTargetDependency */,
+			);
+			name = CanGoTests;
+			productName = CanGoTests;
+			productReference = F1A42D5D1E15F0FF001AB20F /* CanGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A42D671E15F0FF001AB20F /* CanGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A42D771E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGoUITests" */;
+			buildPhases = (
+				F1A42D641E15F0FF001AB20F /* Sources */,
+				F1A42D651E15F0FF001AB20F /* Frameworks */,
+				F1A42D661E15F0FF001AB20F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A42D6A1E15F0FF001AB20F /* PBXTargetDependency */,
+			);
+			name = CanGoUITests;
+			productName = CanGoUITests;
+			productReference = F1A42D681E15F0FF001AB20F /* CanGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A42D411E15F0FF001AB20F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Brian Bae";
+				TargetAttributes = {
+					F1A42D481E15F0FF001AB20F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L6C8TCRC5L;
+						ProvisioningStyle = Automatic;
+					};
+					F1A42D5C1E15F0FF001AB20F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L6C8TCRC5L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1A42D481E15F0FF001AB20F;
+					};
+					F1A42D671E15F0FF001AB20F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L6C8TCRC5L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1A42D481E15F0FF001AB20F;
+					};
+				};
+			};
+			buildConfigurationList = F1A42D441E15F0FF001AB20F /* Build configuration list for PBXProject "CanGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A42D401E15F0FF001AB20F;
+			productRefGroup = F1A42D4A1E15F0FF001AB20F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A42D481E15F0FF001AB20F /* CanGo */,
+				F1A42D5C1E15F0FF001AB20F /* CanGoTests */,
+				F1A42D671E15F0FF001AB20F /* CanGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A42D471E15F0FF001AB20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A42D571E15F0FF001AB20F /* LaunchScreen.storyboard in Resources */,
+				F1A42D541E15F0FF001AB20F /* Assets.xcassets in Resources */,
+				F1A42D521E15F0FF001AB20F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A42D5B1E15F0FF001AB20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A42D661E15F0FF001AB20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A42D451E15F0FF001AB20F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A42D4F1E15F0FF001AB20F /* ViewController.swift in Sources */,
+				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A42D591E15F0FF001AB20F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A42D621E15F0FF001AB20F /* CanGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A42D641E15F0FF001AB20F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A42D6D1E15F0FF001AB20F /* CanGoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A42D5F1E15F0FF001AB20F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A42D481E15F0FF001AB20F /* CanGo */;
+			targetProxy = F1A42D5E1E15F0FF001AB20F /* PBXContainerItemProxy */;
+		};
+		F1A42D6A1E15F0FF001AB20F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A42D481E15F0FF001AB20F /* CanGo */;
+			targetProxy = F1A42D691E15F0FF001AB20F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1A42D501E15F0FF001AB20F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A42D511E15F0FF001AB20F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A42D561E15F0FF001AB20F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1A42D6F1E15F0FF001AB20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A42D701E15F0FF001AB20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A42D721E15F0FF001AB20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6C8TCRC5L;
+				INFOPLIST_FILE = CanGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1A42D731E15F0FF001AB20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6C8TCRC5L;
+				INFOPLIST_FILE = CanGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F1A42D751E15F0FF001AB20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6C8TCRC5L;
+				INFOPLIST_FILE = CanGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanGo.app/CanGo";
+			};
+			name = Debug;
+		};
+		F1A42D761E15F0FF001AB20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6C8TCRC5L;
+				INFOPLIST_FILE = CanGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanGo.app/CanGo";
+			};
+			name = Release;
+		};
+		F1A42D781E15F0FF001AB20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L6C8TCRC5L;
+				INFOPLIST_FILE = CanGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CanGo;
+			};
+			name = Debug;
+		};
+		F1A42D791E15F0FF001AB20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L6C8TCRC5L;
+				INFOPLIST_FILE = CanGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CanGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A42D441E15F0FF001AB20F /* Build configuration list for PBXProject "CanGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A42D6F1E15F0FF001AB20F /* Debug */,
+				F1A42D701E15F0FF001AB20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A42D711E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A42D721E15F0FF001AB20F /* Debug */,
+				F1A42D731E15F0FF001AB20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1A42D741E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A42D751E15F0FF001AB20F /* Debug */,
+				F1A42D761E15F0FF001AB20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1A42D771E15F0FF001AB20F /* Build configuration list for PBXNativeTarget "CanGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A42D781E15F0FF001AB20F /* Debug */,
+				F1A42D791E15F0FF001AB20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1A42D411E15F0FF001AB20F /* Project object */;
+}
