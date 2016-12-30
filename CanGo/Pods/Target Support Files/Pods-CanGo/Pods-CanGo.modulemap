@@ -1,0 +1,6 @@
+framework module Pods_CanGo {
+  umbrella header "Pods-CanGo-umbrella.h"
+
+  export *
+  module * { export * }
+}
