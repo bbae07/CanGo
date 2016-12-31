@@ -58,4 +58,7 @@
 
 
 
+//DAUM MAP API
+#import "DaumMap/MTMapView.h"
+
 #endif /* Kakao_h */
