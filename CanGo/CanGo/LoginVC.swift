@@ -49,6 +49,19 @@ class LoginVC: UIViewController {
     @IBOutlet weak var PWD: UITextField!
     
     @IBAction func LogIn(_ sender: UIButton) {
+        let id = ID.text
+        let pwd = PWD.text
+        Server.manager.login(email: id!, pwd: pwd!, completion: {
+            result in
+            print(result)
+
+            let alert = UIAlertController()
+            let action = UIAlertAction()
+            self.ID.text = ""
+
+            self.present(MainViewController(), animated: true, completion: nil)
+
+        })
     }
     
     
