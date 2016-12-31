@@ -49,11 +49,26 @@ class LoginVC: UIViewController {
     @IBOutlet weak var PWD: UITextField!
     
     @IBAction func LogIn(_ sender: UIButton) {
+            let id = ID.text
+            let pwd = PWD.text
+        Server.manager.login(email: id!, pwd: pwd!, completion: {
+            result in
+            if(result["result"] as! Bool)
+            {
+                print("login success")
+                //화면전환
+            }else{
+                print("login fail")
+                let alert = UIAlertController(title: "로그인 실패", message: "다시 시도해주세요", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                self.ID.text = ""
+                self.PWD.text = ""
+            }
+        })
     }
     
     
-    @IBAction func KakaoLogIn(_ sender: UIButton) {
-    }
     
     //@IBOutlet weak var KakaoBtn: UIButton!
     /*
