@@ -11,6 +11,7 @@ import Alamofire
 
 
 class Server{
+    
     static let manager = Server()
     
     func login(email: String, pwd: String, completion: @escaping (NSDictionary) -> Void){
@@ -28,4 +29,5 @@ class Server{
                 }
         }
     }
+    
 }
