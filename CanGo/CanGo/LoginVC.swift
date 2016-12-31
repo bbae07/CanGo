@@ -15,7 +15,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.KakaoBtn = KOLoginButton()
-        self.kakaoBtn = KOLoginButton(frame: CGRect(x: 20, y: 20, width: 200, height: 60))
+        self.kakaoBtn = KOLoginButton(frame: CGRect(x: 43, y: 526, width: 288, height: 61))
         //self.kakaoBtn?.frame = CGRect(15, 54, 300, 500)
         self.kakaoBtn?.backgroundColor = UIColor.black
 

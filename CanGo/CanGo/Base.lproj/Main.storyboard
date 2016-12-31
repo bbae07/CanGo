@@ -84,14 +84,6 @@
                                 <frame key="frameInset" minX="222" minY="461" width="27" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuF-0i-KUc">
-                                <frame key="frameInset" minX="43" minY="526" width="288" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="kakao_account_login_btn_large_narrow"/>
-                                <connections>
-                                    <action selector="KakaoLogIn:" destination="vOc-0z-zm3" eventType="touchUpInside" id="gYF-T0-X6D"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app2_1" translatesAutoresizingMaskIntoConstraints="NO" id="Cmm-qV-Bc0">
                                 <frame key="frameInset" minX="93" minY="91" width="188" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,7 +93,6 @@
                     </view>
                     <connections>
                         <outlet property="ID" destination="Njp-zP-fHb" id="ZNj-dF-bmJ"/>
-                        <outlet property="KakaoBtn" destination="nuF-0i-KUc" id="vBw-f4-GIC"/>
                         <outlet property="PWD" destination="TuS-Gn-GCJ" id="kfV-bc-qUb"/>
                     </connections>
                 </viewController>
@@ -202,7 +193,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-2C-7rw">
-                                <frame key="frameInset" minX="50.00%" minY="89.38%" width="321" height="52"/>
+                                <frame key="frameInset" minX="50.00%" minY="89.29%" width="321" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="app6_8"/>
                             </button>
@@ -258,6 +249,5 @@
         <image name="app6_4" width="1272" height="126"/>
         <image name="app6_5" width="1272" height="128"/>
         <image name="app6_8" width="1282" height="160"/>
-        <image name="kakao_account_login_btn_large_narrow" width="452" height="98"/>
     </resources>
 </document>
