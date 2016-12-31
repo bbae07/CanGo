@@ -53,6 +53,8 @@
 		F1A42D571E15F0FF001AB20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */; };
 		F1A42D621E15F0FF001AB20F /* CanGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D611E15F0FF001AB20F /* CanGoTests.swift */; };
 		F1A42D6D1E15F0FF001AB20F /* CanGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */; };
+		F1B134FA1E17C19D00172C46 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B134F91E17C19D00172C46 /* SignUpVC.swift */; };
+		F1B134FC1E17C44D00172C46 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B134FB1E17C44D00172C46 /* Server.swift */; };
 		F1F6A1AD1E16107E002D9742 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F6A1AC1E16107E002D9742 /* KakaoOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +128,8 @@
 		F1A42D681E15F0FF001AB20F /* CanGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanGoUITests.swift; sourceTree = "<group>"; };
 		F1A42D6E1E15F0FF001AB20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B134F91E17C19D00172C46 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F1B134FB1E17C44D00172C46 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		F1F6A1AB1E160CD0002D9742 /* Kakao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kakao.h; sourceTree = "<group>"; };
 		F1F6A1AC1E16107E002D9742 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		F2927CEC5D858F3988519EBE /* Pods-CanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanGo/Pods-CanGo.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,15 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C0BA691E17D26B00EACD92 /* OpenGLES.framework in Frameworks */,
-				59C0BA671E17D26200EACD92 /* SystemConfiguration.framework in Frameworks */,
-				59C0BA651E17D25400EACD92 /* QuartzCore.framework in Frameworks */,
-				59C0BA631E17D24A00EACD92 /* libstdc++.6.tbd in Frameworks */,
-				59C0BA611E17D1DA00EACD92 /* libxml2.tbd in Frameworks */,
-				59C0BA5F1E17D1CC00EACD92 /* libsqlite3.tbd in Frameworks */,
-				59C0BA5D1E17D1AC00EACD92 /* CoreLocation.framework in Frameworks */,
 				F1083E3B1E160A4D000BA60D /* Foundation.framework in Frameworks */,
-				59C0BA401E17D11900EACD92 /* DaumMap.framework in Frameworks */,
 				F1F6A1AD1E16107E002D9742 /* KakaoOpenSDK.framework in Frameworks */,
 				F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */,
 				967569069FDA859109C00649 /* Pods_CanGo.framework in Frameworks */,
@@ -178,60 +174,9 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		59C0BA221E17D11900EACD92 /* DaumMap.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				59C0BA231E17D11900EACD92 /* DaumMap.framework */,
-				59C0BA241E17D11900EACD92 /* Resources */,
-			);
-			path = DaumMap.embeddedframework;
-			sourceTree = "<group>";
-		};
-		59C0BA241E17D11900EACD92 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				59C0BA251E17D11900EACD92 /* copyright.png */,
-				59C0BA261E17D11900EACD92 /* daum_copyright.png */,
-				59C0BA271E17D11900EACD92 /* daum_th_line.png */,
-				59C0BA281E17D11900EACD92 /* detail_button.png */,
-				59C0BA291E17D11900EACD92 /* info_box.png */,
-				59C0BA2A1E17D11900EACD92 /* info_box_tail.png */,
-				59C0BA2B1E17D11900EACD92 /* map_pin.png */,
-				59C0BA2C1E17D11900EACD92 /* map_pin@3x.png */,
-				59C0BA2D1E17D11900EACD92 /* map_pin_custom.png */,
-				59C0BA2E1E17D11900EACD92 /* map_pin_custom@3x.png */,
-				59C0BA2F1E17D11900EACD92 /* map_pin_red.png */,
-				59C0BA301E17D11900EACD92 /* map_pin_red@3x.png */,
-				59C0BA311E17D11900EACD92 /* map_pin_shadow.png */,
-				59C0BA321E17D11900EACD92 /* map_pin_shadow@3x.png */,
-				59C0BA331E17D11900EACD92 /* map_pinup.png */,
-				59C0BA341E17D11900EACD92 /* map_pinup@3x.png */,
-				59C0BA351E17D11900EACD92 /* map_pinup_custom.png */,
-				59C0BA361E17D11900EACD92 /* map_pinup_custom@3x.png */,
-				59C0BA371E17D11900EACD92 /* map_present.png */,
-				59C0BA381E17D11900EACD92 /* map_present_background_update.png */,
-				59C0BA391E17D11900EACD92 /* map_present_direction.png */,
-				59C0BA3A1E17D11900EACD92 /* map_present_tracking.png */,
-				59C0BA3B1E17D11900EACD92 /* noimage.png */,
-				59C0BA3C1E17D11900EACD92 /* noimage256.png */,
-				59C0BA3D1E17D11900EACD92 /* point_sprite.png */,
-				59C0BA3E1E17D11900EACD92 /* shadow_balloon.png */,
-				59C0BA3F1E17D11900EACD92 /* th_line.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		F1083E371E160A45000BA60D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59C0BA681E17D26B00EACD92 /* OpenGLES.framework */,
-				59C0BA661E17D26200EACD92 /* SystemConfiguration.framework */,
-				59C0BA641E17D25400EACD92 /* QuartzCore.framework */,
-				59C0BA621E17D24A00EACD92 /* libstdc++.6.tbd */,
-				59C0BA601E17D1DA00EACD92 /* libxml2.tbd */,
-				59C0BA5E1E17D1CC00EACD92 /* libsqlite3.tbd */,
-				59C0BA5C1E17D1AC00EACD92 /* CoreLocation.framework */,
-				59C0BA221E17D11900EACD92 /* DaumMap.embeddedframework */,
 				F1F6A1AC1E16107E002D9742 /* KakaoOpenSDK.framework */,
 				F1083E3A1E160A4D000BA60D /* Foundation.framework */,
 				F1083E381E160A45000BA60D /* UIKit.framework */,
@@ -267,11 +212,12 @@
 			children = (
 				F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */,
 				F1A42D501E15F0FF001AB20F /* Main.storyboard */,
+				F1B134F91E17C19D00172C46 /* SignUpVC.swift */,
 				F1A42D531E15F0FF001AB20F /* Assets.xcassets */,
 				F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */,
 				F1A42D581E15F0FF001AB20F /* Info.plist */,
 				F1083E351E160626000BA60D /* LoginVC.swift */,
-				59C0BA201E17CF6800EACD92 /* MainViewController.swift */,
+				F1B134FB1E17C44D00172C46 /* Server.swift */,
 				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
 			);
 			path = CanGo;
@@ -408,36 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C0BA461E17D11900EACD92 /* info_box_tail.png in Resources */,
-				59C0BA561E17D11900EACD92 /* map_present_tracking.png in Resources */,
-				59C0BA421E17D11900EACD92 /* daum_copyright.png in Resources */,
-				59C0BA471E17D11900EACD92 /* map_pin.png in Resources */,
-				59C0BA4C1E17D11900EACD92 /* map_pin_red@3x.png in Resources */,
 				F1A42D571E15F0FF001AB20F /* LaunchScreen.storyboard in Resources */,
-				59C0BA541E17D11900EACD92 /* map_present_background_update.png in Resources */,
-				59C0BA581E17D11900EACD92 /* noimage256.png in Resources */,
-				59C0BA431E17D11900EACD92 /* daum_th_line.png in Resources */,
-				59C0BA451E17D11900EACD92 /* info_box.png in Resources */,
-				59C0BA521E17D11900EACD92 /* map_pinup_custom@3x.png in Resources */,
-				59C0BA5B1E17D11900EACD92 /* th_line.png in Resources */,
-				59C0BA4B1E17D11900EACD92 /* map_pin_red.png in Resources */,
-				59C0BA411E17D11900EACD92 /* copyright.png in Resources */,
-				59C0BA441E17D11900EACD92 /* detail_button.png in Resources */,
-				59C0BA511E17D11900EACD92 /* map_pinup_custom.png in Resources */,
-				59C0BA481E17D11900EACD92 /* map_pin@3x.png in Resources */,
-				59C0BA5A1E17D11900EACD92 /* shadow_balloon.png in Resources */,
-				59C0BA4E1E17D11900EACD92 /* map_pin_shadow@3x.png in Resources */,
-				59C0BA501E17D11900EACD92 /* map_pinup@3x.png in Resources */,
-				59C0BA4A1E17D11900EACD92 /* map_pin_custom@3x.png in Resources */,
 				F1A42D541E15F0FF001AB20F /* Assets.xcassets in Resources */,
-				59C0BA551E17D11900EACD92 /* map_present_direction.png in Resources */,
 				F1A42D521E15F0FF001AB20F /* Main.storyboard in Resources */,
-				59C0BA4D1E17D11900EACD92 /* map_pin_shadow.png in Resources */,
-				59C0BA571E17D11900EACD92 /* noimage.png in Resources */,
-				59C0BA491E17D11900EACD92 /* map_pin_custom.png in Resources */,
-				59C0BA531E17D11900EACD92 /* map_present.png in Resources */,
-				59C0BA4F1E17D11900EACD92 /* map_pinup.png in Resources */,
-				59C0BA591E17D11900EACD92 /* point_sprite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,8 +430,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1083E361E160626000BA60D /* LoginVC.swift in Sources */,
+				F1B134FA1E17C19D00172C46 /* SignUpVC.swift in Sources */,
+				F1B134FC1E17C44D00172C46 /* Server.swift in Sources */,
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
-				59C0BA211E17CF6800EACD92 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +495,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -591,7 +511,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -626,7 +545,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -642,7 +561,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -668,11 +586,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
 				INFOPLIST_FILE = CanGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -692,11 +608,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
 				INFOPLIST_FILE = CanGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
