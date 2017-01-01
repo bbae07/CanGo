@@ -48,6 +48,7 @@
 		F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E381E160A45000BA60D /* UIKit.framework */; };
 		F1083E3B1E160A4D000BA60D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E3A1E160A4D000BA60D /* Foundation.framework */; };
 		F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118C9CE1E17EACB0069523F /* SignUpVC.swift */; };
+		F16223771E18CA7000FA9C03 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16223761E18CA7000FA9C03 /* Location.swift */; };
 		F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */; };
 		F1A42D521E15F0FF001AB20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D501E15F0FF001AB20F /* Main.storyboard */; };
 		F1A42D541E15F0FF001AB20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D531E15F0FF001AB20F /* Assets.xcassets */; };
@@ -117,6 +118,7 @@
 		F1083E381E160A45000BA60D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1083E3A1E160A4D000BA60D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F118C9CE1E17EACB0069523F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F16223761E18CA7000FA9C03 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F1A42D491E15F0FF001AB20F /* CanGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A42D511E15F0FF001AB20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				F1A42D581E15F0FF001AB20F /* Info.plist */,
 				F1083E351E160626000BA60D /* LoginVC.swift */,
 				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
+				F16223761E18CA7000FA9C03 /* Location.swift */,
 			);
 			path = CanGo;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 				F1DB79551E17D8A3007A66BB /* Server.swift in Sources */,
 				F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */,
+				F16223771E18CA7000FA9C03 /* Location.swift in Sources */,
 				F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

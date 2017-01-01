@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController,MTMapViewDelegate {
+class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegate{
     
     lazy var mapView: MTMapView = MTMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
     
@@ -17,7 +17,8 @@ class MainViewController: UIViewController,MTMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searchbar.delegate = self
+        mapView.addPOIItems([custom_item()])
         leftbutton.setImage(UIImage(named: "app_002_3_1 copy"), for: .normal)
         searchbar.placeholder = "장소검색"
         searchbar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
@@ -46,6 +47,38 @@ class MainViewController: UIViewController,MTMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        Server.manager.search(place: searchBar.text!, completion: {
+            result in
+            print(result)
+            func custom_item() -> MTMapPOIItem{
+                
+                
+                let poiItem = MTMapPOIItem()
+                poiItem.itemName = "이름"
+                poiItem.markerType = .customImage
+                poiItem.customImageName = "app6_7"
+                //poiItem.markerSelectedType = .customImage                   //선택 되었을 때 마커 타입
+                //poiItem.customSelectedImage = UIImage(named: "app6_6")    //선택 되었을 때 마커 이미지 지정
+                poiItem.mapPoint = MTMapPoint(geoCoord: .init(latitude: 37.5654338, longitude: 126.976664))
+                poiItem.showAnimationType = .noAnimation
+                poiItem.customImageAnchorPointOffset = .init(offsetX: 0, offsetY: 0)
+                
+                return poiItem
+            }
+            
+            let item = MTMapPOIItem()
+            item.itemName = "asdf"
+            item.customImageName = "c_pin"
+            item.markerType = .customImage
+            item.mapPoint = MTMapPoint(geoCoord: .init(latitude: 37.5654338, longitude: 126.976664))
+            item.showAnimationType = .noAnimation
+            item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
+            
+            
+            
+        })
+    }
     
     
     /*

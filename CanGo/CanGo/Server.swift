@@ -30,4 +30,11 @@ class Server{
         }
     }
     
+    func search(place: String, completion: @escaping ([NSDictionary]) -> Void){
+        let param:Parameters = ["keyword":place]
+        Alamofire.request("http://169.56.70.181/bfm/search/", method: .post, parameters: param, encoding: URLEncoding.default).responseJSON { response in
+            completion(response.result.value as! [NSDictionary])
+        }
+    }
+    
 }
