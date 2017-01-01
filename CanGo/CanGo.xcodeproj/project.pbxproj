@@ -57,8 +57,6 @@
 		F1A42D6D1E15F0FF001AB20F /* CanGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */; };
 		F1DB79551E17D8A3007A66BB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DB79541E17D8A3007A66BB /* Server.swift */; };
 		F1F6A1AD1E16107E002D9742 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F6A1AC1E16107E002D9742 /* KakaoOpenSDK.framework */; };
-		F1F6E95C1E18E5CF006A7CAB /* Specific.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F6E95B1E18E5CF006A7CAB /* Specific.xib */; };
-		F1F6E9601E18E8E8006A7CAB /* Specific.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F6E95F1E18E8E8006A7CAB /* Specific.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,8 +134,6 @@
 		F1DB79541E17D8A3007A66BB /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		F1F6A1AB1E160CD0002D9742 /* Kakao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kakao.h; sourceTree = "<group>"; };
 		F1F6A1AC1E16107E002D9742 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
-		F1F6E95B1E18E5CF006A7CAB /* Specific.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Specific.xib; sourceTree = "<group>"; };
-		F1F6E95F1E18E8E8006A7CAB /* Specific.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specific.swift; sourceTree = "<group>"; };
 		F2927CEC5D858F3988519EBE /* Pods-CanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanGo/Pods-CanGo.release.xcconfig"; sourceTree = "<group>"; };
 		FD349EF39679CF5778397CC3 /* Pods-CanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanGo/Pods-CanGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -275,9 +271,7 @@
 		F1A42D4B1E15F0FF001AB20F /* CanGo */ = {
 			isa = PBXGroup;
 			children = (
-				F1F6E95F1E18E8E8006A7CAB /* Specific.swift */,
 				F104F3D81E17DD68000D5DB0 /* MainViewController.swift */,
-				F1F6E95B1E18E5CF006A7CAB /* Specific.xib */,
 				F1DB79541E17D8A3007A66BB /* Server.swift */,
 				F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */,
 				F118C9CE1E17EACB0069523F /* SignUpVC.swift */,
@@ -441,7 +435,6 @@
 				59C0BA511E17D11900EACD92 /* map_pinup_custom.png in Resources */,
 				59C0BA481E17D11900EACD92 /* map_pin@3x.png in Resources */,
 				59C0BA5A1E17D11900EACD92 /* shadow_balloon.png in Resources */,
-				F1F6E95C1E18E5CF006A7CAB /* Specific.xib in Resources */,
 				59C0BA4E1E17D11900EACD92 /* map_pin_shadow@3x.png in Resources */,
 				59C0BA501E17D11900EACD92 /* map_pinup@3x.png in Resources */,
 				59C0BA4A1E17D11900EACD92 /* map_pin_custom@3x.png in Resources */,
@@ -532,7 +525,6 @@
 				F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */,
 				F16223771E18CA7000FA9C03 /* Location.swift in Sources */,
 				F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */,
-				F1F6E9601E18E8E8006A7CAB /* Specific.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

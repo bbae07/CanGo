@@ -17,6 +17,18 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     var leftbutton:UIButton = UIButton(frame: CGRect(x: -3, y: 8, width: 66, height: 52))
     var searchbar:UISearchBar = UISearchBar(frame: CGRect(x: 63, y: 12, width: 309, height: 44))
     
+    @IBOutlet var name:UILabel!
+    @IBOutlet var category:UILabel!
+    @IBOutlet var address:UILabel!
+    @IBOutlet var address_new:UILabel!
+    @IBOutlet var yellowlabel:UILabel!
+    @IBAction func Close(_ sender: UIButton){
+        wrappingView.alpha = 0
+    }
+    @IBAction func Specific(_ sender: UIButton){
+        //상세화면 표시
+    }
+    @IBOutlet var wrappingView:UIView!
     
     
     override func viewDidLoad() {
@@ -85,8 +97,12 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     }
     
     func mapView(_ mapView: MTMapView!, selectedPOIItem poiItem: MTMapPOIItem!) -> Bool {
-        var location = self.location[poiItem.tag]
-        
+        let location = self.location[poiItem.tag]
+        name.text = location.name
+        category.text = location.category
+        address.text = location.address_new
+        address_new.text = location.address
+        wrappingView.alpha = 1
         return true
         
     }
