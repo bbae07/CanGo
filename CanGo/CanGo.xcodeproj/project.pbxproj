@@ -43,6 +43,7 @@
 		59C0BA651E17D25400EACD92 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA641E17D25400EACD92 /* QuartzCore.framework */; };
 		59C0BA671E17D26200EACD92 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA661E17D26200EACD92 /* SystemConfiguration.framework */; };
 		59C0BA691E17D26B00EACD92 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA681E17D26B00EACD92 /* OpenGLES.framework */; };
+		59CC7C7F1E17EA3F00CEB17C /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC7C7E1E17EA3F00CEB17C /* testViewController.swift */; };
 		967569069FDA859109C00649 /* Pods_CanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B16366ECD24285163B821 /* Pods_CanGo.framework */; };
 		F1083E361E160626000BA60D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1083E351E160626000BA60D /* LoginVC.swift */; };
 		F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E381E160A45000BA60D /* UIKit.framework */; };
@@ -111,6 +112,7 @@
 		59C0BA641E17D25400EACD92 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		59C0BA661E17D26200EACD92 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		59C0BA681E17D26B00EACD92 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		59CC7C7E1E17EA3F00CEB17C /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		DD9B16366ECD24285163B821 /* Pods_CanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1083E351E160626000BA60D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F1083E381E160A45000BA60D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -276,6 +278,7 @@
 				F1083E351E160626000BA60D /* LoginVC.swift */,
 				59C0BA201E17CF6800EACD92 /* MainViewController.swift */,
 				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
+				59CC7C7E1E17EA3F00CEB17C /* testViewController.swift */,
 			);
 			path = CanGo;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				F1083E361E160626000BA60D /* LoginVC.swift in Sources */,
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 				F1DB79551E17D8A3007A66BB /* Server.swift in Sources */,
+				59CC7C7F1E17EA3F00CEB17C /* testViewController.swift in Sources */,
 				59C0BA211E17CF6800EACD92 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
