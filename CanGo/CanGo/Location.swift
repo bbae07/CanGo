@@ -19,8 +19,8 @@ class Location{
     var address:String = ""
     var address_new:String = ""
     var phone_number:String = ""
-    var latitude:Float = 0
-    var longitude:Float = 0
+    var latitude:Double = 0
+    var longitude:Double = 0
     var c_barrier:Int = 0
     var c_floor:Int = 0
     var c_elevator_exist:Int = 0
@@ -42,15 +42,17 @@ class Location{
     
     init(info:NSDictionary){
         id = info["id"] as! Int
-        category = info["category"] as! String
+        if let category_temp:String = info["category"] as? String{
+            category = category_temp
+        }
         created_at = info["created_at"] as! String
-        comment = [info["comment"] as! String]
+        comment = info["comment"] as! [String]
         user = info["user"] as! String
         address = info["address"] as! String
         address_new = info["address_new"] as! String
         phone_number = info["phone_number"] as! String
-        latitude = info["latitude"] as! Float
-        longitude = info["longitude"] as! Float
+        latitude = Double(info["latitude"] as! String)!
+        longitude = Double(info["longitude"] as! String)!
         c_barrier = info["c_barrier"] as! Int
         c_floor = info["c_floor"] as! Int
         c_elevator_exist = info["c_elevator_exist"] as! Int
@@ -60,7 +62,9 @@ class Location{
         c_handicapped_toilet = info["c_handicapped_toilet"] as! Int
         c_parking_lot_exist = info["c_parking_lot_exist"] as! Int
         c_handicapped_parking_lot = info["c_handicapped_parking_lot"] as! Int
-        extra_info = info["extra_info"] as! String
+        if let extra_info_temp:String = info["extra_info"] as? String{
+            extra_info = extra_info_temp
+        }
         p_entrance = info["p_entrance"] as! String
         p_interior = info["p_interior"] as! String
         p_extra_pic1 = info["p_extra_pic1"] as! String

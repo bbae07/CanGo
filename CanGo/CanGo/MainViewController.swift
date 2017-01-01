@@ -44,19 +44,39 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         Server.manager.search(place: searchBar.text!, completion: {
             result in
-            print(result)
             
             
-            let item = MTMapPOIItem()
-            item.itemName = "asdf"
-            item.customImageName = "c_pin"
-            item.markerType = .customImage
-            item.mapPoint = MTMapPoint(geoCoord: .init(latitude: 37.5654338, longitude: 126.976664))
-            item.showAnimationType = .noAnimation
-            item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
-
-            //items.append(item)
-            self.mapView.add(item)
+            for i in result{
+                let info = Location.init(info: i)
+                if(info.c_barrier == 1 || info.c_barrier == 2)
+                {
+                    let item = MTMapPOIItem()
+                    item.itemName = info.name
+                    item.customImageName = "c_pin"
+                    item.markerType = .customImage
+                    item.mapPoint = MTMapPoint(geoCoord: .init(latitude: info.latitude, longitude: info.longitude))
+                    item.showAnimationType = .noAnimation
+                    item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
+                    
+                    //items.append(item)
+                    self.mapView.add(item)
+                } else if(info.c_barrier == 3)
+                {
+                    let item = MTMapPOIItem()
+                    item.itemName = info.name
+                    item.customImageName = "w_pin"
+                    item.markerType = .customImage
+                    item.mapPoint = MTMapPoint(geoCoord: .init(latitude: info.latitude, longitude: info.longitude))
+                    item.showAnimationType = .noAnimation
+                    item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
+                    
+                    //items.append(item)
+                    self.mapView.add(item)
+                }
+            }
+            
+            self.mapView.fitAreaToShowAllPOIItems()
+            
         })
     }
     /*
