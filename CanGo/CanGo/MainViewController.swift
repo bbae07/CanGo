@@ -21,17 +21,41 @@ class MainViewController: UIViewController,MTMapViewDelegate {
         mapView.daumMapApiKey = "2dd20729644a15718c16758fa84963e8"
         mapView.delegate = self
         mapView.baseMapType = .standard
+        mapView.addPOIItems([custom_item()])
         self.view.addSubview(mapView)
 
-        //search.barTintColor = UIColor.gree
+        /*
         search.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
         search.tintColor = UIColor.gray
-        //search.backgroundColor = UIColor.gray
-        //search.tintColor = UIColor.clear
-        //search.backgroundColor = UIColor.clear
-
         self.view.addSubview(search)
-        // Do any additional setup after loading the view.
+        */
+    }
+
+    func default_item() -> MTMapPOIItem{
+         let item = MTMapPOIItem()
+         item.itemName = "asdf"
+         item.markerType = .redPin
+         item.markerSelectedType = .redPin
+         item.mapPoint = MTMapPoint(geoCoord: .init(latitude: 37.5654338, longitude: 126.976664))
+         item.showAnimationType = .noAnimation
+         item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
+         return item
+    }
+
+    func custom_item() -> MTMapPOIItem{
+
+
+        let poiItem = MTMapPOIItem()
+        poiItem.itemName = "이름"
+        poiItem.markerType = .customImage
+        poiItem.customImageName = "app6_7"
+        //poiItem.markerSelectedType = .customImage                   //선택 되었을 때 마커 타입
+        //poiItem.customSelectedImage = UIImage(named: "app6_6")    //선택 되었을 때 마커 이미지 지정
+        poiItem.mapPoint = MTMapPoint(geoCoord: .init(latitude: 37.5654338, longitude: 126.976664))
+        poiItem.showAnimationType = .noAnimation
+        poiItem.customImageAnchorPointOffset = .init(offsetX: 0, offsetY: 0)
+        
+        return poiItem
     }
 
     override func didReceiveMemoryWarning() {
