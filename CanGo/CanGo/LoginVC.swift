@@ -56,7 +56,7 @@ class LoginVC: UIViewController {
             if(result["result"] as! Bool)
             {
                 print("login success")
-                //화면전환
+                self.present(MainViewController(), animated: true, completion: nil)
             }else{
                 print("login fail")
                 let alert = UIAlertController(title: "로그인 실패", message: "다시 시도해주세요", preferredStyle: UIAlertControllerStyle.alert)

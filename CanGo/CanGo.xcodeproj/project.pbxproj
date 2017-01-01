@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59C0BA211E17CF6800EACD92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0BA201E17CF6800EACD92 /* MainViewController.swift */; };
 		59C0BA401E17D11900EACD92 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA231E17D11900EACD92 /* DaumMap.framework */; };
 		59C0BA411E17D11900EACD92 /* copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C0BA251E17D11900EACD92 /* copyright.png */; };
 		59C0BA421E17D11900EACD92 /* daum_copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C0BA261E17D11900EACD92 /* daum_copyright.png */; };
@@ -44,9 +43,11 @@
 		59C0BA671E17D26200EACD92 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA661E17D26200EACD92 /* SystemConfiguration.framework */; };
 		59C0BA691E17D26B00EACD92 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA681E17D26B00EACD92 /* OpenGLES.framework */; };
 		967569069FDA859109C00649 /* Pods_CanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B16366ECD24285163B821 /* Pods_CanGo.framework */; };
+		F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104F3D81E17DD68000D5DB0 /* MainViewController.swift */; };
 		F1083E361E160626000BA60D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1083E351E160626000BA60D /* LoginVC.swift */; };
 		F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E381E160A45000BA60D /* UIKit.framework */; };
 		F1083E3B1E160A4D000BA60D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E3A1E160A4D000BA60D /* Foundation.framework */; };
+		F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118C9CE1E17EACB0069523F /* SignUpVC.swift */; };
 		F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */; };
 		F1A42D521E15F0FF001AB20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D501E15F0FF001AB20F /* Main.storyboard */; };
 		F1A42D541E15F0FF001AB20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D531E15F0FF001AB20F /* Assets.xcassets */; };
@@ -75,7 +76,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		59C0BA201E17CF6800EACD92 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		59C0BA231E17D11900EACD92 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		59C0BA251E17D11900EACD92 /* copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copyright.png; sourceTree = "<group>"; };
 		59C0BA261E17D11900EACD92 /* daum_copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_copyright.png; sourceTree = "<group>"; };
@@ -112,9 +112,11 @@
 		59C0BA661E17D26200EACD92 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		59C0BA681E17D26B00EACD92 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		DD9B16366ECD24285163B821 /* Pods_CanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F104F3D81E17DD68000D5DB0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F1083E351E160626000BA60D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F1083E381E160A45000BA60D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1083E3A1E160A4D000BA60D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F118C9CE1E17EACB0069523F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F1A42D491E15F0FF001AB20F /* CanGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A42D511E15F0FF001AB20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -267,14 +269,15 @@
 		F1A42D4B1E15F0FF001AB20F /* CanGo */ = {
 			isa = PBXGroup;
 			children = (
+				F104F3D81E17DD68000D5DB0 /* MainViewController.swift */,
 				F1DB79541E17D8A3007A66BB /* Server.swift */,
 				F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */,
+				F118C9CE1E17EACB0069523F /* SignUpVC.swift */,
 				F1A42D501E15F0FF001AB20F /* Main.storyboard */,
 				F1A42D531E15F0FF001AB20F /* Assets.xcassets */,
 				F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */,
 				F1A42D581E15F0FF001AB20F /* Info.plist */,
 				F1083E351E160626000BA60D /* LoginVC.swift */,
-				59C0BA201E17CF6800EACD92 /* MainViewController.swift */,
 				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
 			);
 			path = CanGo;
@@ -516,7 +519,8 @@
 				F1083E361E160626000BA60D /* LoginVC.swift in Sources */,
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 				F1DB79551E17D8A3007A66BB /* Server.swift in Sources */,
-				59C0BA211E17CF6800EACD92 /* MainViewController.swift in Sources */,
+				F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */,
+				F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +593,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -640,6 +645,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -670,6 +676,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD349EF39679CF5778397CC3 /* Pods-CanGo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
 				ENABLE_BITCODE = NO;
@@ -694,6 +701,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2927CEC5D858F3988519EBE /* Pods-CanGo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
 				ENABLE_BITCODE = NO;
