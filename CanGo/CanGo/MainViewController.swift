@@ -44,7 +44,7 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
         mapView.daumMapApiKey = "2dd20729644a15718c16758fa84963e8"
         mapView.delegate = self
         mapView.baseMapType = .standard
-        self.view.addSubview(mapView)
+        self.view.insertSubview(mapView, at: 0)
         self.view.addSubview(leftbutton)
         self.view.addSubview(searchbar)
         // Do any additional setup after loading the view.

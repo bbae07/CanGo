@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CanGo/Server.swift"
-            timestampString = "504944995.370085"
+            filePath = "CanGo/MainViewController.swift"
+            timestampString = "504950236.820591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "search(place:completion:)"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "mapView(_:selectedPOIItem:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/LoginVC.swift"
+            timestampString = "504950483.376469"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "LogIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
