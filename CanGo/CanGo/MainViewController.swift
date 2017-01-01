@@ -12,10 +12,12 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     
     lazy var mapView: MTMapView = MTMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
 
-    var items:[MTMapPOIItem] = []
+    var location:[Location] = []
     
     var leftbutton:UIButton = UIButton(frame: CGRect(x: -3, y: 8, width: 66, height: 52))
     var searchbar:UISearchBar = UISearchBar(frame: CGRect(x: 63, y: 12, width: 309, height: 44))
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +47,10 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
         Server.manager.search(place: searchBar.text!, completion: {
             result in
             
-            
+            var c = 0
             for i in result{
                 let info = Location.init(info: i)
+                self.location.append(info)
                 if(info.c_barrier == 1 || info.c_barrier == 2)
                 {
                     let item = MTMapPOIItem()
@@ -57,8 +60,8 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
                     item.mapPoint = MTMapPoint(geoCoord: .init(latitude: info.latitude, longitude: info.longitude))
                     item.showAnimationType = .noAnimation
                     item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
-                    
                     //items.append(item)
+                    item.tag = c
                     self.mapView.add(item)
                 } else if(info.c_barrier == 3)
                 {
@@ -69,35 +72,24 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
                     item.mapPoint = MTMapPoint(geoCoord: .init(latitude: info.latitude, longitude: info.longitude))
                     item.showAnimationType = .noAnimation
                     item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
-                    
+                    item.tag = c
                     //items.append(item)
                     self.mapView.add(item)
                 }
+                c+=1
             }
             
             self.mapView.fitAreaToShowAllPOIItems()
             
         })
     }
-    /*
-     func custom_item() -> MTMapPOIItem{
-
-
-     let poiItem = MTMapPOIItem()
-     poiItem.itemName = "이름"
-     poiItem.markerType = .customImage
-     poiItem.customImageName = "app6_7"
-     //poiItem.markerSelectedType = .customImage                   //선택 되었을 때 마커 타입
-     //poiItem.customSelectedImage = UIImage(named: "app6_6")    //선택 되었을 때 마커 이미지 지정
-     poiItem.mapPoint = MTMapPoint(geoCoord: .init(latitude: 37.5654338, longitude: 126.976664))
-     poiItem.showAnimationType = .noAnimation
-     poiItem.customImageAnchorPointOffset = .init(offsetX: 0, offsetY: 0)
-
-     return poiItem
-     }
-     */
-
-
+    
+    func mapView(_ mapView: MTMapView!, selectedPOIItem poiItem: MTMapPOIItem!) -> Bool {
+        var location = self.location[poiItem.tag]
+        
+        return true
+        
+    }
     /*
      // MARK: - Navigation
 

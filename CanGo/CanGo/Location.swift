@@ -48,6 +48,7 @@ class Location{
         created_at = info["created_at"] as! String
         comment = info["comment"] as! [String]
         user = info["user"] as! String
+        name = info["name"] as! String
         address = info["address"] as! String
         address_new = info["address_new"] as! String
         phone_number = info["phone_number"] as! String
