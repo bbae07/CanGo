@@ -14,6 +14,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
         //self.KakaoBtn = KOLoginButton()
         self.kakaoBtn = KOLoginButton(frame: CGRect(x: 43, y: 526, width: 288, height: 61))
         //self.kakaoBtn?.frame = CGRect(15, 54, 300, 500)
@@ -69,6 +70,7 @@ class LoginVC: UIViewController {
             }
         })
     }
+    
     
     
     

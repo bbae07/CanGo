@@ -55,6 +55,7 @@
 		F1A42D571E15F0FF001AB20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */; };
 		F1A42D621E15F0FF001AB20F /* CanGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D611E15F0FF001AB20F /* CanGoTests.swift */; };
 		F1A42D6D1E15F0FF001AB20F /* CanGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */; };
+		F1DA0BE31E191F3F00A342F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DA0BE21E191F3F00A342F2 /* ViewController.swift */; };
 		F1DB79551E17D8A3007A66BB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DB79541E17D8A3007A66BB /* Server.swift */; };
 		F1F6A1AD1E16107E002D9742 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F6A1AC1E16107E002D9742 /* KakaoOpenSDK.framework */; };
 /* End PBXBuildFile section */
@@ -131,6 +132,7 @@
 		F1A42D681E15F0FF001AB20F /* CanGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A42D6C1E15F0FF001AB20F /* CanGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanGoUITests.swift; sourceTree = "<group>"; };
 		F1A42D6E1E15F0FF001AB20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1DA0BE21E191F3F00A342F2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1DB79541E17D8A3007A66BB /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		F1F6A1AB1E160CD0002D9742 /* Kakao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kakao.h; sourceTree = "<group>"; };
 		F1F6A1AC1E16107E002D9742 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */,
 				F1A42D581E15F0FF001AB20F /* Info.plist */,
 				F1083E351E160626000BA60D /* LoginVC.swift */,
+				F1DA0BE21E191F3F00A342F2 /* ViewController.swift */,
 				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
 				F16223761E18CA7000FA9C03 /* Location.swift */,
 			);
@@ -523,6 +526,7 @@
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 				F1DB79551E17D8A3007A66BB /* Server.swift in Sources */,
 				F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */,
+				F1DA0BE31E191F3F00A342F2 /* ViewController.swift in Sources */,
 				F16223771E18CA7000FA9C03 /* Location.swift in Sources */,
 				F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */,
 			);

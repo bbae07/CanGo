@@ -33,12 +33,13 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
         searchbar.delegate = self
         //mapView.addPOIItems([custom_item()])
         leftbutton.setImage(UIImage(named: "app_002_3_1 copy"), for: .normal)
         searchbar.placeholder = "장소검색"
         searchbar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        
+        wrappingView.alpha = 0
         
         
         mapView.daumMapApiKey = "2dd20729644a15718c16758fa84963e8"
