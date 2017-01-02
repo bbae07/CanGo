@@ -145,6 +145,9 @@
                                 <state key="normal" title="비회원">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fS1-g8-cBt" kind="presentation" id="qw3-Hy-zHR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmB-JC-gZR">
                                 <rect key="frame" x="137" y="455" width="88" height="30"/>
