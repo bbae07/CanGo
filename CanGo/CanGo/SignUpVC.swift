@@ -34,44 +34,53 @@ class SignUpVC: UIViewController {
     var wheel:Bool = false
     
     @IBAction func submit(_ sender: UIButton) {
-        if(id.text == "" || email.text == "" || birthdayStr == "" || pwd.text == "" || pwdconfirm.text == "" || !wheelchair.isSelected)
+        //if(id.text == "" || email.text == "" || birthdayStr == "" || pwd.text == "" || pwdconfirm.text == "" || !wheelchair.isSelected)
+        if(id.text == "" || email.text == "" || pwd.text == "" || birthdayStr == "" || pwdconfirm.text == "" || wheelchair.selectedSegmentIndex == -1)
         {
+            let alert = UIAlertController(title: "회원가입 실패", message: "항목을 다 작성하셨는지 확인해주세요", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+            
+        } else{
+            
             if(pwd.text != pwdconfirm.text)
             {
                 let alert = UIAlertController(title: "회원가입 실패", message: "비밀번호가 일치하는지 확인해주세요", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             } else{
                 if(wheelchair.selectedSegmentIndex == 0)
                 {
                     wheel = true
                 }
-                
                 Server.manager.signup(email: email.text!, nickname: id.text!, password: pwdconfirm.text!, bday: "2000-01-08", wheelchair: wheel) { result in
-                    if(result.value(forKey: "nickname") as! String == "cango user with this nickname already exists." )
-                    {
-                        let alert = UIAlertController(title: "회원가입 실패", message: "닉네임 중복", preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    var isDuplicated:Bool = false
+                    if let nicknameResult:String = (result.value(forKey: "nickname") as? [String])?[0]{
+                        if(nicknameResult == "cango user with this nickname already exists."){
+                            let alert = UIAlertController(title: "회원가입 실패", message: "닉네임 중복", preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            isDuplicated = true
+                        }
                     }
-                    else if(result.value(forKey: "email") as! String == "cango user with this email address already exists.")
-                    {
-                        let alert = UIAlertController(title: "회원가입 실패", message: "이메일 중복", preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
-                    } else
-                    {
+                    if let emailResult:String = (result.value(forKey: "email") as? [String])?[0]{
+                        if(emailResult == "cango user with this email address already exists."){
+                            let alert = UIAlertController(title: "회원가입 실패", message: "이메일 중복", preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            isDuplicated = true
+                        }
+                    }
+                    if( !isDuplicated){
                         self.dismiss(animated: true, completion: nil)
+                        
                     }
                 }
             }
-            
-            
-        } else{
-            let alert = UIAlertController(title: "회원가입 실패", message: "항목을 다 작성하셨는지 확인해주세요", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
         }
-        
         wheel = false
-        
-        
         
     }
     @IBAction func back(_ sender: UIButton) {
