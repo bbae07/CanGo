@@ -49,6 +49,7 @@
 		F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E381E160A45000BA60D /* UIKit.framework */; };
 		F1083E3B1E160A4D000BA60D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E3A1E160A4D000BA60D /* Foundation.framework */; };
 		F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118C9CE1E17EACB0069523F /* SignUpVC.swift */; };
+		F15DD97A1E1A87C10046C59B /* FindPwdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15DD9791E1A87C10046C59B /* FindPwdVC.swift */; };
 		F16223771E18CA7000FA9C03 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16223761E18CA7000FA9C03 /* Location.swift */; };
 		F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */; };
 		F1A42D521E15F0FF001AB20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A42D501E15F0FF001AB20F /* Main.storyboard */; };
@@ -121,6 +122,7 @@
 		F1083E381E160A45000BA60D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1083E3A1E160A4D000BA60D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F118C9CE1E17EACB0069523F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F15DD9791E1A87C10046C59B /* FindPwdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPwdVC.swift; sourceTree = "<group>"; };
 		F16223761E18CA7000FA9C03 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F1A42D491E15F0FF001AB20F /* CanGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */,
 				F118C9CE1E17EACB0069523F /* SignUpVC.swift */,
 				F1A42D501E15F0FF001AB20F /* Main.storyboard */,
+				F15DD9791E1A87C10046C59B /* FindPwdVC.swift */,
 				59FE7D841E1A7FCC00552480 /* TestViewController.swift */,
 				F1A42D531E15F0FF001AB20F /* Assets.xcassets */,
 				F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */,
@@ -525,6 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15DD97A1E1A87C10046C59B /* FindPwdVC.swift in Sources */,
 				F1083E361E160626000BA60D /* LoginVC.swift in Sources */,
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 				59FE7D851E1A7FCC00552480 /* TestViewController.swift in Sources */,
