@@ -37,4 +37,11 @@ class Server{
         }
     }
     
+    func signup(email: String, nickname: String, password: String, bday: String, wheelchair: Bool, completion: @escaping (NSDictionary) -> Void){
+        let param:Parameters = ["email":email,"nickname":nickname,"password":password,"date_of_birth":bday,"use_wheelchair":wheelchair]
+        Alamofire.request("http://169.56.70.181/auth/register/", method: .post, parameters: param, encoding: URLEncoding.default).responseJSON{ response in
+            completion(response.result.value as! NSDictionary)
+        }
+    }
+    
 }

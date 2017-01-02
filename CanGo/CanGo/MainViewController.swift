@@ -33,7 +33,6 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
         searchbar.delegate = self
         //mapView.addPOIItems([custom_item()])
         leftbutton.setImage(UIImage(named: "app_002_3_1 copy"), for: .normal)
@@ -57,6 +56,7 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
         Server.manager.search(place: searchBar.text!, completion: {
             result in
             
