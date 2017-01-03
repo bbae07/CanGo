@@ -14,11 +14,11 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        name.text = currentlocation?.name
-        category.text = currentlocation?.category
-        address.text = currentlocation?.address
-        address_new.text = currentlocation?.address_new
-        extra.text = currentlocation?.extra_info
+        name.text = currentlocation!.name
+        category.text = currentlocation!.category
+        address.text = currentlocation!.address
+        address_new.text = currentlocation!.address_new
+        extra.text = currentlocation!.extra_info
         
         
         
