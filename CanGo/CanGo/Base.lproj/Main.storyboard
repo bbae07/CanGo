@@ -710,6 +710,18 @@
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1600"/>
+                    <connections>
+                        <outlet property="image1" destination="NzU-xG-eX0" id="Zrh-D1-lG9"/>
+                        <outlet property="image2" destination="dMZ-20-lcL" id="0cV-KW-vP5"/>
+                        <outlet property="image3" destination="rKE-SR-85W" id="usQ-ai-xa1"/>
+                        <outlet property="image4" destination="neK-m8-ts2" id="iSu-4Z-LIt"/>
+                        <outlet property="image5" destination="de3-iU-SJF" id="H4F-Uc-93B"/>
+                        <outlet property="image6" destination="Lk4-Ha-p5B" id="KuC-dV-Mul"/>
+                        <outlet property="image7" destination="wf5-8F-zpv" id="nc3-F3-R3g"/>
+                        <outlet property="image8" destination="Sm1-T5-w9W" id="yln-qb-XXv"/>
+                        <outlet property="profileImage" destination="b5N-HB-fSu" id="TXp-1d-2hs"/>
+                        <outlet property="symbolScrollView" destination="7B1-Nt-SOs" id="2ey-nK-Kdf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1V-EJ-dCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
