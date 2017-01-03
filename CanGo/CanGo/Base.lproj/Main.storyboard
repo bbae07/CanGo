@@ -292,10 +292,10 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="521.28935532233891"/>
         </scene>
-        <!--Test View Controller-->
+        <!--DetailVC-->
         <scene sceneID="z0p-cf-8UN">
             <objects>
-                <viewController id="yNm-JJ-b7D" customClass="TestViewController" customModule="CanGo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SPECIFIC" id="yNm-JJ-b7D" customClass="DetailVC" customModule="CanGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Naz-3H-reW"/>
                         <viewControllerLayoutGuide type="bottom" id="fPz-Pe-xrP"/>
@@ -711,16 +711,26 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1600"/>
                     <connections>
-                        <outlet property="image1" destination="NzU-xG-eX0" id="Zrh-D1-lG9"/>
-                        <outlet property="image2" destination="dMZ-20-lcL" id="0cV-KW-vP5"/>
-                        <outlet property="image3" destination="rKE-SR-85W" id="usQ-ai-xa1"/>
-                        <outlet property="image4" destination="neK-m8-ts2" id="iSu-4Z-LIt"/>
-                        <outlet property="image5" destination="de3-iU-SJF" id="H4F-Uc-93B"/>
-                        <outlet property="image6" destination="Lk4-Ha-p5B" id="KuC-dV-Mul"/>
-                        <outlet property="image7" destination="wf5-8F-zpv" id="nc3-F3-R3g"/>
-                        <outlet property="image8" destination="Sm1-T5-w9W" id="yln-qb-XXv"/>
+                        <outlet property="address" destination="KIS-y4-ACt" id="peH-iK-JZE"/>
+                        <outlet property="address_new" destination="BT2-ra-nhN" id="QsM-Za-BQj"/>
+                        <outlet property="category" destination="Bag-FR-0SG" id="8Uy-jf-cI0"/>
+                        <outlet property="comments" destination="bVS-80-JGS" id="rsZ-GV-wgd"/>
+                        <outlet property="extra" destination="ISL-EB-2qC" id="bdH-QO-NMa"/>
+                        <outlet property="iconscroll" destination="7B1-Nt-SOs" id="QI3-Z0-Ste"/>
+                        <outlet property="image1" destination="NzU-xG-eX0" id="iMb-yv-43n"/>
+                        <outlet property="image2" destination="dMZ-20-lcL" id="CFy-7g-yMQ"/>
+                        <outlet property="image3" destination="rKE-SR-85W" id="NMf-oE-Bbk"/>
+                        <outlet property="image4" destination="neK-m8-ts2" id="ZYE-r6-199"/>
+                        <outlet property="image5" destination="de3-iU-SJF" id="S8b-CA-9Mo"/>
+                        <outlet property="image6" destination="Lk4-Ha-p5B" id="832-ad-JlO"/>
+                        <outlet property="image7" destination="wf5-8F-zpv" id="hyW-mZ-AVE"/>
+                        <outlet property="image8" destination="Sm1-T5-w9W" id="x84-Ug-RHq"/>
+                        <outlet property="images" destination="Nj0-r1-CBV" id="MNy-nG-eQe"/>
+                        <outlet property="name" destination="kmR-DM-sD4" id="3Ii-pJ-Zr1"/>
                         <outlet property="profileImage" destination="b5N-HB-fSu" id="TXp-1d-2hs"/>
+                        <outlet property="profilepic" destination="b5N-HB-fSu" id="8Rz-1a-109"/>
                         <outlet property="symbolScrollView" destination="7B1-Nt-SOs" id="2ey-nK-Kdf"/>
+                        <outlet property="username" destination="zaK-FD-ndp" id="DnT-Dt-erM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1V-EJ-dCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

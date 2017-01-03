@@ -13,6 +13,8 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     lazy var mapView: MTMapView = MTMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
 
     var location:[Location] = []
+    var currentlocation:Location? = nil
+    
     
     var leftbutton:UIButton = UIButton(frame: CGRect(x: -3, y: 8, width: 66, height: 52))
     var searchbar:UISearchBar = UISearchBar(frame: CGRect(x: 63, y: 12, width: 309, height: 44))
@@ -27,6 +29,12 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     }
     @IBAction func Specific(_ sender: UIButton){
         //상세화면 표시
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var newViewController:DetailVC
+        storyboard.instantiateViewController(withIdentifier: "SPECIFIC")
+        newViewController.currentlocation = self.currentlocation
+        present(newViewController, animated:true, completion:nil)
+        
     }
     @IBOutlet var wrappingView:UIView!
     
@@ -99,11 +107,14 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     
     func mapView(_ mapView: MTMapView!, selectedPOIItem poiItem: MTMapPOIItem!) -> Bool {
         let location = self.location[poiItem.tag]
+        currentlocation = location
         name.text = location.name
         category.text = location.category
         address.text = location.address_new
         address_new.text = location.address
         wrappingView.alpha = 1
+        
+        
         return true
         
     }
