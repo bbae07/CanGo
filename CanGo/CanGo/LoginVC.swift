@@ -28,13 +28,29 @@ class LoginVC: UIViewController {
     }
     
     func kakaoClicked(){
-        print("kakao clicked");
-        /*if KOSession.shared().isOpen(){
-         KOSession.shared().close()
-         }*/
+        if KOSession.shared().isOpen(){
+            KOSession.shared().close()
+        }
         KOSession.shared().open { (error) in
+            print(error)
             if KOSession.shared().isOpen(){
                 print("done")
+                self.kakaoUserInfo()
+            }
+        }
+    }
+
+    func kakaoUserInfo(){
+        KOSessionTask.meTask { (result , error) in
+
+            if (result != nil){
+                let user:KOUser = result as! KOUser
+                let id = "kakao_\(user.id!)"
+                let nickname:String = user.property(forKey:"nickname")! as! String
+                //self.authLoginWithInfo(id: id,nickname: nickname)
+            }else{
+                print("result none")
+                //COMMON.common.showAlertWithMessage(titleMessage: "카카오 로그인에 실패하였습니다", contentMessage: "다시 한번 시도해주세요", viewController: self)
             }
         }
     }
