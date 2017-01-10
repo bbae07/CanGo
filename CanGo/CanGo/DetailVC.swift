@@ -12,26 +12,6 @@ class DetailVC: UIViewController {
 
     var currentlocation:Location? = nil
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        name.text = currentlocation!.name
-        category.text = currentlocation!.category
-        address.text = currentlocation!.address
-        address_new.text = currentlocation!.address_new
-        extra.text = currentlocation!.extra_info
-        
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBOutlet var name:UILabel!
     @IBOutlet var category:UILabel!
     @IBOutlet var address:UILabel!
@@ -55,6 +35,70 @@ class DetailVC: UIViewController {
     
     @IBOutlet var comments:UITableView!
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        name.text = currentlocation!.name
+        category.text = currentlocation!.category
+        address.text = currentlocation!.address
+        address_new.text = currentlocation!.address_new
+        extra.text = currentlocation!.extra_info
+        
+        
+        //구체적인 image control
+        
+        let list:[UIImageView] = [image1,image2,image3,image4,image5,image6,image7,image8]
+        
+        for i in 0..<list.count{
+            switch i {
+            case 0:
+                list[0].image = UIImage(named: "app_0_12_\(currentlocation?.c_barrier)")
+            case 1:
+                list[1].image = UIImage(named: "app_0_12_\(currentlocation?.c_floor)")
+            case 2:
+                list[2].image = UIImage(named: "app_0_12_\(currentlocation?.c_elevator_exist)")
+            case 3:
+                list[3].image = UIImage(named: "app_0_12_\(currentlocation?.c_chair_movable)")
+            case 4:
+                list[4].image = UIImage(named: "app_0_12_\(currentlocation?.c_toilet_available)")
+            case 5:
+                list[5].image = UIImage(named: "app_0_12_\(currentlocation?.c_handicapped_toilet)")
+            case 6:
+                list[6].image = UIImage(named: "app_0_12_\(currentlocation?.c_parking_lot_exist)")
+            case 7:
+                list[7].image = UIImage(named: "app_0_12_\(currentlocation?.c_handicapped_parking_lot)")
+            
+            default:
+                list[i].image = UIImage(named: "app_0_\(i+12)_1")
+            }
+        }
+        
+        
+//        for i in 0..<list.count{
+//            list[i].image = UIImage(named: "app_0_\(i+12)_1")
+//        }
+        
+        for i in 0..<8{
+            let small:UIImageView = UIImageView()
+            small.frame.size = list[i].frame.size
+            small.image = list[i].image
+            small.frame = CGRect(x: CGFloat(i)*small.frame.size.width*1.1, y: CGFloat(0), width: small.frame.size.width, height: small.frame.size.height)
+            iconscroll.addSubview(small)
+        }
+        
+        iconscroll.contentSize = CGSize(width:12*list[0].frame.size.width, height:list[0].frame.size.height)
+        iconscroll.isScrollEnabled = true
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
     
     /*
      profileImage.image = UIImage(named: "app_0_4_1")

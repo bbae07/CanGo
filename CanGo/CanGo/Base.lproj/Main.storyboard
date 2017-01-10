@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vOc-0z-zm3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vOc-0z-zm3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -711,26 +711,24 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1600"/>
                     <connections>
-                        <outlet property="address" destination="KIS-y4-ACt" id="peH-iK-JZE"/>
-                        <outlet property="address_new" destination="BT2-ra-nhN" id="QsM-Za-BQj"/>
-                        <outlet property="category" destination="Bag-FR-0SG" id="8Uy-jf-cI0"/>
-                        <outlet property="comments" destination="bVS-80-JGS" id="rsZ-GV-wgd"/>
-                        <outlet property="extra" destination="ISL-EB-2qC" id="bdH-QO-NMa"/>
-                        <outlet property="iconscroll" destination="7B1-Nt-SOs" id="QI3-Z0-Ste"/>
-                        <outlet property="image1" destination="NzU-xG-eX0" id="iMb-yv-43n"/>
-                        <outlet property="image2" destination="dMZ-20-lcL" id="CFy-7g-yMQ"/>
-                        <outlet property="image3" destination="rKE-SR-85W" id="NMf-oE-Bbk"/>
-                        <outlet property="image4" destination="neK-m8-ts2" id="ZYE-r6-199"/>
-                        <outlet property="image5" destination="de3-iU-SJF" id="S8b-CA-9Mo"/>
-                        <outlet property="image6" destination="Lk4-Ha-p5B" id="832-ad-JlO"/>
-                        <outlet property="image7" destination="wf5-8F-zpv" id="hyW-mZ-AVE"/>
-                        <outlet property="image8" destination="Sm1-T5-w9W" id="x84-Ug-RHq"/>
-                        <outlet property="images" destination="Nj0-r1-CBV" id="MNy-nG-eQe"/>
-                        <outlet property="name" destination="kmR-DM-sD4" id="3Ii-pJ-Zr1"/>
-                        <outlet property="profileImage" destination="b5N-HB-fSu" id="TXp-1d-2hs"/>
-                        <outlet property="profilepic" destination="b5N-HB-fSu" id="8Rz-1a-109"/>
-                        <outlet property="symbolScrollView" destination="7B1-Nt-SOs" id="2ey-nK-Kdf"/>
-                        <outlet property="username" destination="zaK-FD-ndp" id="DnT-Dt-erM"/>
+                        <outlet property="address" destination="KIS-y4-ACt" id="ETc-WS-49Q"/>
+                        <outlet property="address_new" destination="BT2-ra-nhN" id="Kwk-bQ-muH"/>
+                        <outlet property="category" destination="Bag-FR-0SG" id="0ot-1L-Lsg"/>
+                        <outlet property="comments" destination="bVS-80-JGS" id="x5S-fi-WHk"/>
+                        <outlet property="extra" destination="ISL-EB-2qC" id="2AZ-nx-VAz"/>
+                        <outlet property="iconscroll" destination="7B1-Nt-SOs" id="co2-Wx-FyV"/>
+                        <outlet property="image1" destination="NzU-xG-eX0" id="97J-0F-dBU"/>
+                        <outlet property="image2" destination="dMZ-20-lcL" id="R9A-1c-3Eq"/>
+                        <outlet property="image3" destination="rKE-SR-85W" id="HTF-b4-bXS"/>
+                        <outlet property="image4" destination="neK-m8-ts2" id="HEJ-k7-5TX"/>
+                        <outlet property="image5" destination="de3-iU-SJF" id="uRt-q0-jTP"/>
+                        <outlet property="image6" destination="Lk4-Ha-p5B" id="cTi-Be-Hft"/>
+                        <outlet property="image7" destination="wf5-8F-zpv" id="xQb-hG-Am2"/>
+                        <outlet property="image8" destination="Sm1-T5-w9W" id="jmM-i8-I76"/>
+                        <outlet property="images" destination="Nj0-r1-CBV" id="HO3-NP-uU3"/>
+                        <outlet property="name" destination="kmR-DM-sD4" id="KVL-6i-bSj"/>
+                        <outlet property="profilepic" destination="b5N-HB-fSu" id="QoU-q8-GOR"/>
+                        <outlet property="username" destination="zaK-FD-ndp" id="kra-J3-S1H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1V-EJ-dCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
