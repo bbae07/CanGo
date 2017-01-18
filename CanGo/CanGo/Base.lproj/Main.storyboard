@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vOc-0z-zm3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m69-nF-iay">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -146,7 +146,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fS1-g8-cBt" kind="presentation" id="qw3-Hy-zHR"/>
+                                    <segue destination="r6g-le-7DI" kind="presentation" id="qw3-Hy-zHR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmB-JC-gZR">
@@ -192,6 +192,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mO4-Sn-E8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-162.40000000000001" y="101.19940029985008"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="X10-61-8t1">
+            <objects>
+                <viewController storyboardIdentifier="SWRevealViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m69-nF-iay" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ji0-ZM-VR9"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Q8-jH-N33"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nzg-Gx-KSu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="r6g-le-7DI" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="ApP-TG-c50"/>
+                        <segue destination="3O0-zj-koa" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="Vv4-2e-cU3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbV-oc-ogk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="903"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Qqw-fd-Una">
+            <objects>
+                <tableViewController id="3O0-zj-koa" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3bZ-kw-9TL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3Dy-Cl-kg7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Dy-Cl-kg7" id="ott-GQ-Szt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3O0-zj-koa" id="Q3n-Jk-dk3"/>
+                            <outlet property="delegate" destination="3O0-zj-koa" id="zO3-99-wAi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56d-CN-QfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="1225"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="5gA-lc-JHO">
@@ -279,18 +329,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zEZ-A7-VxX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="23Z-Sr-zHm"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="address" destination="yb3-8Y-UNN" id="Kf4-fO-Sxh"/>
                         <outlet property="address_new" destination="XnM-dI-jde" id="RIs-pf-Jfb"/>
                         <outlet property="category" destination="Ms8-Lm-gkS" id="kLt-nP-UFr"/>
                         <outlet property="name" destination="icc-UN-5Wf" id="h72-Ru-99g"/>
+                        <outlet property="opener" destination="23Z-Sr-zHm" id="R2t-WY-YG9"/>
                         <outlet property="wrappingView" destination="Djz-IP-9dT" id="ibP-3o-Q1s"/>
                         <outlet property="yellowlabel" destination="cIA-bp-I5q" id="Q6M-kk-WU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hU7-C4-zrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="521.28935532233891"/>
+            <point key="canvasLocation" x="2016.8" y="521.28935532233891"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="z0p-cf-8UN">
@@ -733,7 +787,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1V-EJ-dCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3018" y="941"/>
+            <point key="canvasLocation" x="3956" y="940.92953523238384"/>
         </scene>
         <!--회원가입-->
         <scene sceneID="hA0-aF-ean">
@@ -895,7 +949,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbh-AM-7fX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.4000000000001" y="485.30734632683664"/>
+            <point key="canvasLocation" x="2845.5999999999999" y="485.30734632683664"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AEz-CB-Ik4">
@@ -919,6 +973,24 @@
             </objects>
             <point key="canvasLocation" x="-1030" y="-716"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="szQ-I2-vej">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r6g-le-7DI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZQ-gm-nBu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fS1-g8-cBt" kind="relationship" relationship="rootViewController" id="5Sv-Qx-oyn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Czo-VA-kIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="521.28935532233891"/>
+        </scene>
     </scenes>
     <resources>
         <image name="app2_0" width="1536" height="2560"/>
@@ -937,4 +1009,7 @@
         <image name="app_0_20" width="214" height="92"/>
         <image name="app_0_22" width="414" height="102"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ApP-TG-c50"/>
+    </inferredMetricsTieBreakers>
 </document>

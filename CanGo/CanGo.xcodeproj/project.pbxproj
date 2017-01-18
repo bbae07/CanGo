@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		598CDF661E301A5400396E8E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 598CDF651E301A5400396E8E /* SWRevealViewController.m */; };
 		59C0BA401E17D11900EACD92 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA231E17D11900EACD92 /* DaumMap.framework */; };
 		59C0BA411E17D11900EACD92 /* copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C0BA251E17D11900EACD92 /* copyright.png */; };
 		59C0BA421E17D11900EACD92 /* daum_copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C0BA261E17D11900EACD92 /* daum_copyright.png */; };
@@ -80,6 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		598CDF641E301A5400396E8E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		598CDF651E301A5400396E8E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		59C0BA231E17D11900EACD92 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		59C0BA251E17D11900EACD92 /* copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copyright.png; sourceTree = "<group>"; };
 		59C0BA261E17D11900EACD92 /* daum_copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_copyright.png; sourceTree = "<group>"; };
@@ -190,6 +193,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		598CDF631E301A3C00396E8E /* SW */ = {
+			isa = PBXGroup;
+			children = (
+				598CDF641E301A5400396E8E /* SWRevealViewController.h */,
+				598CDF651E301A5400396E8E /* SWRevealViewController.m */,
+			);
+			name = SW;
+			sourceTree = "<group>";
+		};
 		59C0BA221E17D11900EACD92 /* DaumMap.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +289,7 @@
 		F1A42D4B1E15F0FF001AB20F /* CanGo */ = {
 			isa = PBXGroup;
 			children = (
+				598CDF631E301A3C00396E8E /* SW */,
 				F104F3D81E17DD68000D5DB0 /* MainViewController.swift */,
 				F1DB79541E17D8A3007A66BB /* Server.swift */,
 				F1A42D4C1E15F0FF001AB20F /* AppDelegate.swift */,
@@ -385,6 +398,7 @@
 					F1A42D481E15F0FF001AB20F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = L6C8TCRC5L;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					F1A42D5C1E15F0FF001AB20F = {
@@ -535,6 +549,7 @@
 				F191FFEB1E1BF12600644F2A /* DetailVC.swift in Sources */,
 				F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */,
 				F1DA0BE31E191F3F00A342F2 /* ViewController.swift in Sources */,
+				598CDF661E301A5400396E8E /* SWRevealViewController.m in Sources */,
 				F16223771E18CA7000FA9C03 /* Location.swift in Sources */,
 				F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */,
 			);
@@ -599,7 +614,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -651,7 +666,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -694,6 +709,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -709,6 +725,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.barrierwings.CanGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -719,6 +736,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
