@@ -52,6 +52,7 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
         searchbar.delegate = self
         //mapView.addPOIItems([custom_item()])
         leftbutton.setImage(UIImage(named: "app_002_3_1 copy"), for: .normal)
+        leftbutton.addTarget(self, action: #selector(openSlide), for: .touchUpInside)
         searchbar.placeholder = "장소검색"
         searchbar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
         wrappingView.alpha = 0
@@ -69,6 +70,10 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func openSlide(sender:UIButton){
+        self.revealViewController().revealToggle(sender)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

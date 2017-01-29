@@ -207,8 +207,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="r6g-le-7DI" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="ApP-TG-c50"/>
                         <segue destination="3O0-zj-koa" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="Vv4-2e-cU3"/>
+                        <segue destination="fS1-g8-cBt" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="vro-q8-qVU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbV-oc-ogk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -993,24 +993,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUx-Ei-eQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1030" y="-716"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="szQ-I2-vej">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r6g-le-7DI" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZQ-gm-nBu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fS1-g8-cBt" kind="relationship" relationship="rootViewController" id="5Sv-Qx-oyn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Czo-VA-kIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="521.28935532233891"/>
         </scene>
     </scenes>
     <resources>
