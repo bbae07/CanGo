@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "signup(email:nickname:password:bday:wheelchair:completion:)"
+            landmarkName = "signup(email:nickname:password:bday:wheelchair:supporters:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +106,12 @@
                   moduleName = "CanGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/SignUpVC.swift"
-                  timestampString = "506469454.987476"
+                  timestampString = "507356378.02189"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
                   endingLineNumber = "60"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "42">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -121,12 +121,12 @@
                   moduleName = "CanGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/SignUpVC.swift"
-                  timestampString = "506469454.989075"
+                  timestampString = "507356378.024916"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
                   endingLineNumber = "60"
-                  offsetFromSymbolStart = "668">
+                  offsetFromSymbolStart = "833">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -143,7 +143,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "signup(email:nickname:password:bday:wheelchair:completion:)"
+            landmarkName = "signup(email:nickname:password:bday:wheelchair:supporters:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,12 +170,12 @@
                   moduleName = "CanGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/SignUpVC.swift"
-                  timestampString = "506469454.992468"
+                  timestampString = "507356378.030414"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
                   endingLineNumber = "68"
-                  offsetFromSymbolStart = "1512">
+                  offsetFromSymbolStart = "1969">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -185,12 +185,12 @@
                   moduleName = "CanGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/SignUpVC.swift"
-                  timestampString = "506469454.993964"
+                  timestampString = "507356378.033262"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
                   endingLineNumber = "68"
-                  offsetFromSymbolStart = "2132">
+                  offsetFromSymbolStart = "2795">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -336,6 +336,182 @@
             startingLineNumber = "59"
             endingLineNumber = "59"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/MainViewController.swift"
+            timestampString = "507053640.188583"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/MainViewController.swift"
+            timestampString = "507053647.57"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "searchBarSearchButtonClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/MainViewController.swift"
+            timestampString = "507053651.989543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "didReceiveMemoryWarning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/Server.swift"
+            timestampString = "507053659.879938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "search(place:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CanGo.Server.search (place : Swift.String, completion : (Swift.Array&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CanGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/Server.swift"
+                  timestampString = "507356378.094953"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CanGo.Server.(search (place : Swift.String, completion : (Swift.Array&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "CanGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/Server.swift"
+                  timestampString = "507356378.097681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/Server.swift"
+            timestampString = "507053661.65818"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "search(place:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/Server.swift"
+            timestampString = "507053662.45982"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "search(place:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CanGo.Server.search (place : Swift.String, completion : (Swift.Array&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CanGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/Server.swift"
+                  timestampString = "507356378.108514"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CanGo.Server.(search (place : Swift.String, completion : (Swift.Array&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "CanGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyungmoon/CanGo/CanGo/CanGo/Server.swift"
+                  timestampString = "507356378.11388"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "610">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CanGo/Server.swift"
+            timestampString = "507053664.259804"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "search(place:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
