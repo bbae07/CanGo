@@ -12,33 +12,60 @@ class SignUpVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
 
-        // Do any additional setup after loading the view.
+        
+        let datepicker:UIDatePicker = UIDatePicker()
+        datepicker.datePickerMode = UIDatePickerMode.date
+        birthday.inputView = datepicker
+        datepicker.addTarget(self, action:  #selector(SignUpVC.datePickerValueChanged), for: UIControlEvents.valueChanged)
+        
+        let toolbar = UIToolbar()
+        toolbar.barStyle = .default
+        toolbar.isTranslucent = true
+        let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(SignUpVC.doneDatePickerPressed))
+        
+        toolbar.setItems([space, doneButton], animated: false)
+        toolbar.isUserInteractionEnabled = true
+        toolbar.sizeToFit()
+        
+        birthday.inputAccessoryView = toolbar
+        
+        self.view.addSubview(birthday)
+
     }
 
+    func doneDatePickerPressed(){
+        self.view.endEditing(true)
+    }
+    
+    func datePickerValueChanged(sender:UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        birthday.text = dateFormatter.string(from: sender.date)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var birthday:UITextField!
     @IBOutlet weak var id: UITextField!
     @IBOutlet weak var email: UITextField!
-    @IBAction func birthday(_ sender: UIButton) {
-        
-    }
     @IBOutlet weak var wheelchair: UISegmentedControl!
     @IBOutlet weak var supporters: UISegmentedControl!
     @IBOutlet weak var pwd: UITextField!
     @IBOutlet weak var pwdconfirm: UITextField!
-    var birthdayStr:String = "2000-01-08"
     var wheel:Bool = false
     var supporter:Int = 0
     
     @IBAction func submit(_ sender: UIButton) {
         //if(id.text == "" || email.text == "" || birthdayStr == "" || pwd.text == "" || pwdconfirm.text == "" || !wheelchair.isSelected)
-        if(id.text == "" || email.text == "" || pwd.text == "" || birthdayStr == "" || pwdconfirm.text == "" || wheelchair.selectedSegmentIndex == -1 || supporters.selectedSegmentIndex == -1)
+        if(id.text == "" || email.text == "" || pwd.text == "" || birthday.text == "" || pwdconfirm.text == "" || wheelchair.selectedSegmentIndex == -1 || supporters.selectedSegmentIndex == -1)
         {
             let alert = UIAlertController(title: "회원가입 실패", message: "항목을 다 작성하셨는지 확인해주세요", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
@@ -61,7 +88,7 @@ class SignUpVC: UIViewController {
                 {
                     supporter = 1
                 }
-                Server.manager.signup(email: email.text!, nickname: id.text!, password: pwdconfirm.text!, bday: "2000-01-08 06:00:00.000000-08:00", wheelchair: wheel, supporters: supporter) { result in
+                Server.manager.signup(email: email.text!, nickname: id.text!, password: pwdconfirm.text!, bday: "\(birthday.text) 06:00:00.000000-08:00", wheelchair: wheel, supporters: supporter) { result in
                     
                     var isDuplicated:Bool = false
                     if let nicknameResult:String = (result.value(forKey: "nickname") as? [String])?[0]{
