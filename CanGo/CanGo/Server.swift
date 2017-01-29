@@ -22,7 +22,7 @@ class Server{
                     //로그인성공
                     UserDefaults.standard.set(result, forKey: "token")
                     UserDefaults.standard.synchronize()
-                    completion(["result": true])
+                    completion(["result": true])    
                 }else{
                     //로그인실패
                     completion(["result": false])
@@ -37,8 +37,8 @@ class Server{
         }
     }
     
-    func signup(email: String, nickname: String, password: String, bday: String, wheelchair: Bool, completion: @escaping (NSDictionary) -> Void){
-        let param:Parameters = ["email":email,"nickname":nickname,"password":password,"date_of_birth":bday,"use_wheelchair":wheelchair]
+    func signup(email: String, nickname: String, password: String, bday: String, wheelchair: Bool, supporters: Int,completion: @escaping (NSDictionary) -> Void){
+        let param:Parameters = ["email":email,"nickname":nickname,"password":password,"date_of_birth":bday,"use_wheelchair":wheelchair, "supporters":supporters]
         Alamofire.request("http://169.56.70.181/auth/register/", method: .post, parameters: param, encoding: URLEncoding.default).responseJSON{ response in
             completion(response.result.value as! NSDictionary)
         }

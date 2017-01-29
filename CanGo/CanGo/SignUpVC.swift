@@ -26,16 +26,19 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var id: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBAction func birthday(_ sender: UIButton) {
+        
     }
     @IBOutlet weak var wheelchair: UISegmentedControl!
+    @IBOutlet weak var supporters: UISegmentedControl!
     @IBOutlet weak var pwd: UITextField!
     @IBOutlet weak var pwdconfirm: UITextField!
     var birthdayStr:String = "2000-01-08"
     var wheel:Bool = false
+    var supporter:Int = 0
     
     @IBAction func submit(_ sender: UIButton) {
         //if(id.text == "" || email.text == "" || birthdayStr == "" || pwd.text == "" || pwdconfirm.text == "" || !wheelchair.isSelected)
-        if(id.text == "" || email.text == "" || pwd.text == "" || birthdayStr == "" || pwdconfirm.text == "" || wheelchair.selectedSegmentIndex == -1)
+        if(id.text == "" || email.text == "" || pwd.text == "" || birthdayStr == "" || pwdconfirm.text == "" || wheelchair.selectedSegmentIndex == -1 || supporters.selectedSegmentIndex == -1)
         {
             let alert = UIAlertController(title: "회원가입 실패", message: "항목을 다 작성하셨는지 확인해주세요", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
@@ -54,7 +57,11 @@ class SignUpVC: UIViewController {
                 {
                     wheel = true
                 }
-                Server.manager.signup(email: email.text!, nickname: id.text!, password: pwdconfirm.text!, bday: "2000-01-08", wheelchair: wheel) { result in
+                if(supporters.selectedSegmentIndex == 0)
+                {
+                    supporter = 1
+                }
+                Server.manager.signup(email: email.text!, nickname: id.text!, password: pwdconfirm.text!, bday: "2000-01-08 06:00:00.000000-08:00", wheelchair: wheel, supporters: supporter) { result in
                     
                     var isDuplicated:Bool = false
                     if let nicknameResult:String = (result.value(forKey: "nickname") as? [String])?[0]{
