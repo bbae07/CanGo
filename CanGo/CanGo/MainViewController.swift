@@ -25,6 +25,8 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     @IBOutlet var address_new:UILabel!
     @IBOutlet var yellowlabel:UILabel!
 
+    @IBOutlet var opener:UIBarButtonItem!
+
     @IBAction func Close(_ sender: UIButton){
         wrappingView.alpha = 0
     }
@@ -43,10 +45,14 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        opener.target = self.revealViewController()
+        opener.action = #selector(SWRevealViewController.revealToggle(_:))
+
+
         searchbar.delegate = self
+        //mapView.addPOIItems([custom_item()])
         leftbutton.setImage(UIImage(named: "app_002_3_1 copy"), for: .normal)
         leftbutton.addTarget(self, action: #selector(openSlide), for: .touchUpInside)
-
         searchbar.placeholder = "장소검색"
         searchbar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
         wrappingView.alpha = 0
@@ -60,14 +66,14 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
         self.view.addSubview(searchbar)
         // Do any additional setup after loading the view.
     }
-
-    func openSlide(sender:UIButton){
-        self.revealViewController().revealToggle(sender)
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func openSlide(sender:UIButton){
+        self.revealViewController().revealToggle(sender)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
