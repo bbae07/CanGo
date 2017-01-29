@@ -31,6 +31,7 @@ class FindPwdVC: UIViewController {
         let alert = UIAlertController(title: "이메일 전송", message: "\(email.text!) 로 초기화된 비밀번호가 전송됩니다. \n주소를 수정하시려면 취소 버튼을 눌러주세요.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default) {action in
             self.endView.alpha = 1
+            Server.manager.findpwd(email: self.email.text!)
         })
         alert.addAction(UIAlertAction(title: "취소", style: UIAlertActionStyle.cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)

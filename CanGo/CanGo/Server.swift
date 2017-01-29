@@ -44,5 +44,11 @@ class Server{
         }
     }
     
+    func findpwd(email: String){
+        let param:Parameters = ["email":email]
+        Alamofire.request("http://169.56.70.181/auth/password/reset/" , method: .post, parameters: param, encoding: URLEncoding.default).responseJSON{ response in
+            
+        }
+    }
     
 }
