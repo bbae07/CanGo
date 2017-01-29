@@ -24,6 +24,9 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     @IBOutlet var address:UILabel!
     @IBOutlet var address_new:UILabel!
     @IBOutlet var yellowlabel:UILabel!
+
+    @IBOutlet var opener:UIBarButtonItem!
+
     @IBAction func Close(_ sender: UIButton){
         wrappingView.alpha = 0
     }
@@ -41,6 +44,11 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        opener.target = self.revealViewController()
+        opener.action = #selector(SWRevealViewController.revealToggle(_:))
+
+
         searchbar.delegate = self
         //mapView.addPOIItems([custom_item()])
         leftbutton.setImage(UIImage(named: "app_002_3_1 copy"), for: .normal)
