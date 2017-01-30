@@ -71,8 +71,10 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     func openSlide(sender:UIButton){
+        self.revealViewController().rearViewRevealWidth = 300
         self.revealViewController().revealToggle(sender)
     }
     

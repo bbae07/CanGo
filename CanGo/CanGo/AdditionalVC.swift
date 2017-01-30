@@ -33,7 +33,7 @@ class AdditionalVC: UITableViewController {
             return 205.0
         }
         else{
-            return 65.0
+            return 55.0
         }
     }
 
