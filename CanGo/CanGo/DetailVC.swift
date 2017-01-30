@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class DetailVC: UIViewController {
 
@@ -30,12 +31,51 @@ class DetailVC: UIViewController {
     @IBOutlet var image6:UIImageView!
     @IBOutlet var image7:UIImageView!
     @IBOutlet var image8:UIImageView!
-    
+
+    @IBOutlet var button1:UIButton!
+    @IBOutlet var button2:UIButton!
+    @IBOutlet var button3:UIButton!
+    @IBOutlet var button4:UIButton!
+    @IBOutlet var button5:UIButton!
+    @IBOutlet var button6:UIButton!
+    @IBOutlet var button7:UIButton!
+    @IBOutlet var button8:UIButton!
+
     @IBOutlet var images:UIScrollView!
     
     @IBOutlet var comments:UITableView!
     
-    
+
+    func editClicked(sender:UIButton){
+        // Prepare the popup assets
+        let title = "THIS IS THE DIALOG TITLE"
+        let message = "This is the message section of the popup dialog default view"
+        let image = UIImage(named: "pexels-photo-103290")
+
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message, image: image)
+
+        // Create buttons
+        let buttonOne = CancelButton(title: "CANCEL") {
+            print("You canceled the car dialog.")
+        }
+
+        let buttonTwo = DefaultButton(title: "ADMIRE CAR") {
+            print("What a beauty!")
+        }
+
+        let buttonThree = DefaultButton(title: "BUY CAR") {
+            print("Ah, maybe next time :)")
+        }
+
+        // Add buttons to dialog
+        // Alternatively, you can use popup.addButton(buttonOne)
+        // to add a single button
+        popup.addButtons([buttonOne, buttonTwo, buttonThree])
+        
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,6 +88,13 @@ class DetailVC: UIViewController {
         
         
         //구체적인 image control
+
+        let buttonList:[UIButton] = [button1,button2,button3,button4,button5,button6,button7,button8]
+
+        for i in 0..<buttonList.count{
+            buttonList[i].tag = i+1
+            buttonList[i].addTarget(self, action: #selector(editClicked(sender:)), for: .touchUpInside)
+        }
         
         let list:[UIImageView] = [image1,image2,image3,image4,image5,image6,image7,image8]
         

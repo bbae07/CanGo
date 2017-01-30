@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.2.0)
+  - PopupDialog (0.5.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - PopupDialog (~> 0.5)
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  PopupDialog: 9890441b81105b9076757af2afe2b037be682f3e
 
-PODFILE CHECKSUM: fc8d3cd2b488e28c3f069c0c66adb8856611dd97
+PODFILE CHECKSUM: 874e0f448b27f72233e0936fde273da0014ac1e1
 
 COCOAPODS: 1.1.0.beta.1

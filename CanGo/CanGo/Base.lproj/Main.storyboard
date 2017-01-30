@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m69-nF-iay">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m69-nF-iay">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -927,6 +927,14 @@
                     <connections>
                         <outlet property="address" destination="KIS-y4-ACt" id="ETc-WS-49Q"/>
                         <outlet property="address_new" destination="BT2-ra-nhN" id="Kwk-bQ-muH"/>
+                        <outlet property="button1" destination="O23-FA-CKF" id="B6l-UQ-P3O"/>
+                        <outlet property="button2" destination="b0I-VU-U7W" id="JHb-Lf-zcx"/>
+                        <outlet property="button3" destination="LVh-Dk-k3p" id="uKl-IN-NNE"/>
+                        <outlet property="button4" destination="px2-ha-VA1" id="0e5-ce-XBS"/>
+                        <outlet property="button5" destination="GnR-fx-jVR" id="UXt-Fx-0k8"/>
+                        <outlet property="button6" destination="Noj-uh-LbI" id="LYJ-Mh-goG"/>
+                        <outlet property="button7" destination="2eE-ws-Zb3" id="1Kt-9p-gC8"/>
+                        <outlet property="button8" destination="NBY-qi-DP9" id="k2H-bO-54r"/>
                         <outlet property="category" destination="Bag-FR-0SG" id="0ot-1L-Lsg"/>
                         <outlet property="comments" destination="bVS-80-JGS" id="x5S-fi-WHk"/>
                         <outlet property="extra" destination="ISL-EB-2qC" id="2AZ-nx-VAz"/>
