@@ -54,22 +54,45 @@ class DetailVC: UIViewController {
         for i in 0..<list.count{
             switch i {
             case 0:
-                list[0].image = UIImage(named: "app_0_12_\(currentlocation?.c_barrier)")
+                list[0].image = UIImage(named: "app_0_12_\(currentlocation!.c_barrier)")
             case 1:
-                list[1].image = UIImage(named: "app_0_12_\(currentlocation?.c_floor)")
+                list[1].image = UIImage(named: "app_0_13_\(currentlocation!.c_floor)")
             case 2:
-                list[2].image = UIImage(named: "app_0_12_\(currentlocation?.c_elevator_exist)")
+                if(currentlocation!.c_elevator_exist == 0){
+                    list[2].image = UIImage(named: "app_0_14_2")
+                }else{
+                    list[2].image = UIImage(named: "app_0_14_\(currentlocation!.c_elevator_exist)")
+                }
             case 3:
-                list[3].image = UIImage(named: "app_0_12_\(currentlocation?.c_chair_movable)")
+                if(currentlocation!.c_chair_movable == 0){
+                    list[3].image = UIImage(named: "app_0_15_2")
+                }else{
+                    list[3].image = UIImage(named: "app_0_15_\(currentlocation!.c_chair_movable)")
+                }
             case 4:
-                list[4].image = UIImage(named: "app_0_12_\(currentlocation?.c_toilet_available)")
+                if(currentlocation!.c_toilet_available == 0){
+                    list[4].image = UIImage(named: "app_0_16_2")
+                }else{
+                    list[4].image = UIImage(named: "app_0_16_\(currentlocation!.c_toilet_available)")
+                }
             case 5:
-                list[5].image = UIImage(named: "app_0_12_\(currentlocation?.c_handicapped_toilet)")
+                if(currentlocation!.c_handicapped_toilet == 0){
+                    list[5].image = UIImage(named: "app_0_17_2")
+                }else{
+                    list[5].image = UIImage(named: "app_0_17_\(currentlocation!.c_handicapped_toilet)")
+                }
             case 6:
-                list[6].image = UIImage(named: "app_0_12_\(currentlocation?.c_parking_lot_exist)")
+                if(currentlocation!.c_parking_lot_exist == 0){
+                    list[6].image = UIImage(named: "app_0_18_2")
+                }else{
+                    list[6].image = UIImage(named: "app_0_18_\(currentlocation!.c_parking_lot_exist)")
+                }
             case 7:
-                list[7].image = UIImage(named: "app_0_12_\(currentlocation?.c_handicapped_parking_lot)")
-            
+                if(currentlocation!.c_handicapped_parking_lot == 0){
+                    list[7].image = UIImage(named: "app_0_19_2")
+                }else{
+                    list[7].image = UIImage(named: "app_0_19_\(currentlocation!.c_handicapped_parking_lot)")
+                }
             default:
                 list[i].image = UIImage(named: "app_0_\(i+12)_1")
             }
