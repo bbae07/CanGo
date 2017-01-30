@@ -70,8 +70,6 @@ class SignUpVC: UIViewController {
             let alert = UIAlertController(title: "회원가입 실패", message: "항목을 다 작성하셨는지 확인해주세요", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            
-            
         } else{
             
             if(pwd.text != pwdconfirm.text)
