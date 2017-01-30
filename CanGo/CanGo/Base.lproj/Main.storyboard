@@ -839,9 +839,6 @@
                                             <constraint firstItem="Rhb-xZ-Lw2" firstAttribute="top" secondItem="VHV-4y-aRG" secondAttribute="top" constant="116" id="unT-CN-Umz"/>
                                         </constraints>
                                     </stackView>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-Nt-SOs">
-                                        <rect key="frame" x="20" y="518" width="375" height="49"/>
-                                    </scrollView>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wy0-8u-W8b">
                                         <rect key="frame" x="29" y="460" width="129" height="50"/>
                                         <subviews>
@@ -878,9 +875,13 @@
                                             <constraint firstAttribute="height" constant="181" id="UBi-95-vzL"/>
                                         </constraints>
                                     </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-Nt-SOs">
+                                        <rect key="frame" x="27" y="518" width="361" height="49"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="7B1-Nt-SOs" firstAttribute="top" secondItem="Wy0-8u-W8b" secondAttribute="bottom" constant="8" id="0Dv-LV-b2c"/>
                                     <constraint firstItem="jTJ-d9-JFs" firstAttribute="centerX" secondItem="ddJ-1C-OE4" secondAttribute="centerX" id="31Q-ZV-yfr"/>
                                     <constraint firstItem="jTJ-d9-JFs" firstAttribute="leading" secondItem="947-3x-B4Q" secondAttribute="leading" constant="20" id="3FP-C7-iob"/>
                                     <constraint firstAttribute="bottom" secondItem="jTJ-d9-JFs" secondAttribute="bottom" constant="1380" id="8UX-yb-YNv"/>
@@ -891,21 +892,20 @@
                                     <constraint firstItem="6ss-Zd-1go" firstAttribute="leading" secondItem="ddJ-1C-OE4" secondAttribute="leading" id="ILK-d9-VQQ"/>
                                     <constraint firstItem="ddJ-1C-OE4" firstAttribute="top" secondItem="VHV-4y-aRG" secondAttribute="bottom" constant="8" symbolic="YES" id="Imx-sY-Ibr"/>
                                     <constraint firstItem="4ZR-Kf-Wgj" firstAttribute="top" secondItem="jTJ-d9-JFs" secondAttribute="bottom" id="Mbh-dC-2M9"/>
+                                    <constraint firstItem="VHV-4y-aRG" firstAttribute="top" secondItem="7B1-Nt-SOs" secondAttribute="bottom" constant="8" id="MgN-W0-MwO"/>
                                     <constraint firstItem="6ss-Zd-1go" firstAttribute="leading" secondItem="947-3x-B4Q" secondAttribute="leading" constant="64" id="NOL-Ec-wgF"/>
                                     <constraint firstItem="6ss-Zd-1go" firstAttribute="top" secondItem="ddJ-1C-OE4" secondAttribute="bottom" constant="8" id="Ptp-YP-gH7"/>
-                                    <constraint firstItem="jTJ-d9-JFs" firstAttribute="leading" secondItem="7B1-Nt-SOs" secondAttribute="leading" id="TzK-Yb-JWn"/>
-                                    <constraint firstItem="jTJ-d9-JFs" firstAttribute="trailing" secondItem="7B1-Nt-SOs" secondAttribute="trailing" id="USA-aQ-FoL"/>
                                     <constraint firstAttribute="trailing" secondItem="jTJ-d9-JFs" secondAttribute="trailing" constant="20" id="UkP-i4-SGh"/>
                                     <constraint firstItem="jTJ-d9-JFs" firstAttribute="centerX" secondItem="6ss-Zd-1go" secondAttribute="centerX" id="WWG-sF-EmL"/>
                                     <constraint firstItem="ddJ-1C-OE4" firstAttribute="top" secondItem="VHV-4y-aRG" secondAttribute="bottom" constant="8" id="Ya9-FB-nRE"/>
                                     <constraint firstItem="jTJ-d9-JFs" firstAttribute="centerX" secondItem="947-3x-B4Q" secondAttribute="centerX" id="YpS-2L-Lg0"/>
                                     <constraint firstItem="Wy0-8u-W8b" firstAttribute="top" secondItem="4ZR-Kf-Wgj" secondAttribute="bottom" constant="8" symbolic="YES" id="a3U-5C-Jxy"/>
+                                    <constraint firstAttribute="trailing" secondItem="7B1-Nt-SOs" secondAttribute="trailing" constant="27" id="c3B-Vf-rK6"/>
                                     <constraint firstItem="jTJ-d9-JFs" firstAttribute="centerX" secondItem="VHV-4y-aRG" secondAttribute="centerX" id="cKU-vZ-6Wj"/>
                                     <constraint firstItem="jTJ-d9-JFs" firstAttribute="trailing" secondItem="4ZR-Kf-Wgj" secondAttribute="trailing" id="g2s-mT-df8"/>
-                                    <constraint firstItem="7B1-Nt-SOs" firstAttribute="top" secondItem="Wy0-8u-W8b" secondAttribute="bottom" constant="8" symbolic="YES" id="n4p-Xe-zL6"/>
                                     <constraint firstItem="jTJ-d9-JFs" firstAttribute="top" secondItem="947-3x-B4Q" secondAttribute="top" constant="64" id="nAK-aY-HWJ"/>
                                     <constraint firstAttribute="bottom" secondItem="6ss-Zd-1go" secondAttribute="bottom" constant="9" id="qeP-Qb-x3e"/>
-                                    <constraint firstItem="VHV-4y-aRG" firstAttribute="top" secondItem="7B1-Nt-SOs" secondAttribute="bottom" constant="8" symbolic="YES" id="uDr-YT-euX"/>
+                                    <constraint firstItem="7B1-Nt-SOs" firstAttribute="leading" secondItem="947-3x-B4Q" secondAttribute="leading" constant="27" id="rtU-66-z9g"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
