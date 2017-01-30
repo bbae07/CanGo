@@ -40,7 +40,7 @@ class DetailVC: UIViewController {
         super.viewDidLoad()
         
         
-        name.text = currentlocation!.name
+        self.name.text = currentlocation!.name
         category.text = currentlocation!.category
         address.text = currentlocation!.address
         address_new.text = currentlocation!.address_new
