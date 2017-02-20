@@ -47,34 +47,17 @@ class DetailVC: UIViewController {
     
 
     func editClicked(sender:UIButton){
-        // Prepare the popup assets
-        let title = "THIS IS THE DIALOG TITLE"
-        let message = "This is the message section of the popup dialog default view"
-        let image = UIImage(named: "pexels-photo-103290")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let new_popup:PopUpDialogViewController = storyboard.instantiateViewController(withIdentifier: "POP_UP_DIALOG") as! PopUpDialogViewController
+        new_popup.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
 
-        // Create the dialog
-        let popup = PopupDialog(title: title, message: message, image: image)
-
-        // Create buttons
-        let buttonOne = CancelButton(title: "CANCEL") {
-            print("You canceled the car dialog.")
-        }
-
-        let buttonTwo = DefaultButton(title: "ADMIRE CAR") {
-            print("What a beauty!")
-        }
-
-        let buttonThree = DefaultButton(title: "BUY CAR") {
-            print("Ah, maybe next time :)")
-        }
-
-        // Add buttons to dialog
-        // Alternatively, you can use popup.addButton(buttonOne)
-        // to add a single button
-        popup.addButtons([buttonOne, buttonTwo, buttonThree])
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = new_popup.view.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        //new_popup.view.sendSubview(toBack: new_popup.popUpView)
         
-        // Present dialog
-        self.present(popup, animated: true, completion: nil)
+        self.present(new_popup, animated: true, completion: nil)
     }
     @IBAction func exit(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)

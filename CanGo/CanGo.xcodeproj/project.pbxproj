@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		598CDF661E301A5400396E8E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 598CDF651E301A5400396E8E /* SWRevealViewController.m */; };
+		59B49C841E5AAB7E000CE107 /* PopUpDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B49C831E5AAB7E000CE107 /* PopUpDialogViewController.swift */; };
 		59C0BA401E17D11900EACD92 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA231E17D11900EACD92 /* DaumMap.framework */; };
 		59C0BA411E17D11900EACD92 /* copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C0BA251E17D11900EACD92 /* copyright.png */; };
 		59C0BA421E17D11900EACD92 /* daum_copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C0BA261E17D11900EACD92 /* daum_copyright.png */; };
@@ -84,6 +85,7 @@
 /* Begin PBXFileReference section */
 		598CDF641E301A5400396E8E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		598CDF651E301A5400396E8E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		59B49C831E5AAB7E000CE107 /* PopUpDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpDialogViewController.swift; sourceTree = "<group>"; };
 		59C0BA231E17D11900EACD92 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		59C0BA251E17D11900EACD92 /* copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copyright.png; sourceTree = "<group>"; };
 		59C0BA261E17D11900EACD92 /* daum_copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_copyright.png; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				F1DA0BE21E191F3F00A342F2 /* ViewController.swift */,
 				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
 				F16223761E18CA7000FA9C03 /* Location.swift */,
+				59B49C831E5AAB7E000CE107 /* PopUpDialogViewController.swift */,
 			);
 			path = CanGo;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15DD97A1E1A87C10046C59B /* FindPwdVC.swift in Sources */,
+				59B49C841E5AAB7E000CE107 /* PopUpDialogViewController.swift in Sources */,
 				F1083E361E160626000BA60D /* LoginVC.swift in Sources */,
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 				F1DB79551E17D8A3007A66BB /* Server.swift in Sources */,
