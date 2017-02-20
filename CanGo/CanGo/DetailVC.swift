@@ -76,6 +76,9 @@ class DetailVC: UIViewController {
         // Present dialog
         self.present(popup, animated: true, completion: nil)
     }
+    @IBAction func exit(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

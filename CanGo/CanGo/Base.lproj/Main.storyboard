@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m69-nF-iay">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vOc-0z-zm3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -920,6 +920,9 @@
                     <navigationItem key="navigationItem" id="Ia0-Da-zky">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="K3W-C4-ayx">
                             <color key="tintColor" red="0.1529411765" green="0.73333333329999995" blue="0.70196078429999997" alpha="0.61877693970000003" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="exit:" destination="yNm-JJ-b7D" id="CHt-FV-CII"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1122,7 +1125,7 @@
         <!--Navigation Controller-->
         <scene sceneID="M7e-PY-zy1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rmU-7U-Ddr" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SPECIFIC_PARENT" automaticallyAdjustsScrollViewInsets="NO" id="rmU-7U-Ddr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQn-uH-Cnv">
