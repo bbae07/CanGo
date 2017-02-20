@@ -48,30 +48,22 @@ class DetailVC: UIViewController {
 
     func editClicked(sender:UIButton){
         // Prepare the popup assets
-        let title = "THIS IS THE DIALOG TITLE"
-        let message = "This is the message section of the popup dialog default view"
+        let title = "수정하기"
+        let message = ""
         let image = UIImage(named: "pexels-photo-103290")
 
         // Create the dialog
-        let popup = PopupDialog(title: title, message: message, image: image)
+        let popup = PopupDialog(title: title,message: message, image: image)
+        var dialogApp = PopupDialogDefaultView.appearance()
+        //dialogApp.titleColor = UIColor(red: 60, green: 171, blue: 161, alpha: 1.0)
+        dialogApp.titleFont = UIFont.boldSystemFont(ofSize: 16)
 
-        // Create buttons
-        let buttonOne = CancelButton(title: "CANCEL") {
-            print("You canceled the car dialog.")
+        let submit = DefaultButton(title: "등록") {
+            print("등록!")
         }
 
-        let buttonTwo = DefaultButton(title: "ADMIRE CAR") {
-            print("What a beauty!")
-        }
 
-        let buttonThree = DefaultButton(title: "BUY CAR") {
-            print("Ah, maybe next time :)")
-        }
-
-        // Add buttons to dialog
-        // Alternatively, you can use popup.addButton(buttonOne)
-        // to add a single button
-        popup.addButtons([buttonOne, buttonTwo, buttonThree])
+        popup.addButton(submit)
         
         // Present dialog
         self.present(popup, animated: true, completion: nil)
