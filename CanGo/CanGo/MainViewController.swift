@@ -33,9 +33,11 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     @IBAction func Specific(_ sender: UIButton){
         //상세화면 표시
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var newViewController:DetailVC = storyboard.instantiateViewController(withIdentifier: "SPECIFIC") as! DetailVC
-        newViewController.currentlocation = self.currentlocation
-        present(newViewController, animated:true, completion:nil)
+        let specificController:DetailVC = storyboard.instantiateViewController(withIdentifier: "SPECIFIC") as! DetailVC
+        specificController.currentlocation = self.currentlocation
+        let specificParentController:UINavigationController = storyboard.instantiateViewController(withIdentifier: "SPECIFIC_PARENT") as! UINavigationController
+        specificParentController.setViewControllers([specificController], animated: true)
+        present(specificParentController, animated:true, completion:nil)
         
     }
     @IBOutlet var wrappingView:UIView!

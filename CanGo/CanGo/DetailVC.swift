@@ -47,26 +47,13 @@ class DetailVC: UIViewController {
     
 
     func editClicked(sender:UIButton){
-        // Prepare the popup assets
-        let title = "수정하기"
-        let message = ""
-        let image = UIImage(named: "pexels-photo-103290")
-
-        // Create the dialog
-        let popup = PopupDialog(title: title,message: message, image: image)
-        var dialogApp = PopupDialogDefaultView.appearance()
-        //dialogApp.titleColor = UIColor(red: 60, green: 171, blue: 161, alpha: 1.0)
-        dialogApp.titleFont = UIFont.boldSystemFont(ofSize: 16)
-
-        let submit = DefaultButton(title: "등록") {
-            print("등록!")
-        }
-
-
-        popup.addButton(submit)
-        
-        // Present dialog
-        self.present(popup, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let new_popup:PopUpDialogViewController = storyboard.instantiateViewController(withIdentifier: "POP_UP_DIALOG") as! PopUpDialogViewController
+        new_popup.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        self.present(new_popup, animated: true, completion: nil)
+    }
+    @IBAction func exit(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
