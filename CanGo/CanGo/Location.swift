@@ -100,13 +100,6 @@ class Location{
         if let _:Int = info["c_handicapped_parking_lot"] as? Int{
             c_handicapped_parking_lot = info["c_handicapped_parking_lot"] as! Int
         }
-        /*
-         c_chair_movable = info["c_chair_movable"] as! Int
-         c_toilet_available = info["c_toilet_available"] as! Int
-         c_handicapped_toilet = info["c_handicapped_toilet"] as! Int
-         c_parking_lot_exist = info["c_parking_lot_exist"] as! Int
-         c_handicapped_parking_lot = info["c_handicapped_parking_lot"] as! Int
-         */
         if let extra_info_temp:String = info["extra_info"] as? String{
             extra_info = extra_info_temp
         }
