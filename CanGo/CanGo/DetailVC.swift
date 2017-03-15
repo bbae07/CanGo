@@ -50,13 +50,6 @@ class DetailVC: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let new_popup:PopUpDialogViewController = storyboard.instantiateViewController(withIdentifier: "POP_UP_DIALOG") as! PopUpDialogViewController
         new_popup.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = new_popup.view.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        //new_popup.view.sendSubview(toBack: new_popup.popUpView)
-        
         self.present(new_popup, animated: true, completion: nil)
     }
     @IBAction func exit(_ sender: UIBarButtonItem) {
