@@ -10,6 +10,13 @@ import UIKit
 
 class PopUpDialogViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var submit: UIButton!
+    @IBAction func submit(_ sender: Any) {
+        var image = imageview.image
+        var select = selection.selectedSegmentIndex
+    }
+    
+    @IBOutlet weak var selection: UISegmentedControl!
     @IBOutlet weak var imageview: UIImageView!
     @IBAction func camera(_ sender: Any) {
 //        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
