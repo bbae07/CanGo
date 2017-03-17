@@ -9,7 +9,8 @@
 import UIKit
 import PopupDialog
 
-class DetailVC: UIViewController {
+class DetailVC: UIViewController,MTMapViewDelegate {
+    //MTMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
 
     var currentlocation:Location? = nil
     
@@ -18,6 +19,9 @@ class DetailVC: UIViewController {
     @IBOutlet var address:UILabel!
     @IBOutlet var address_new:UILabel!
     @IBOutlet var extra:UILabel!
+    
+    @IBOutlet weak var locationTitleView: UIView!
+    @IBOutlet weak var locationMapView: MTMapView!
     
     @IBOutlet var profilepic:UIImageView!
     @IBOutlet var username:UILabel!
@@ -140,6 +144,41 @@ class DetailVC: UIViewController {
         iconscroll.contentSize = CGSize(width:12*list[0].frame.size.width, height:list[0].frame.size.height)
         iconscroll.isScrollEnabled = true
         // Do any additional setup after loading the view.
+        
+        
+        
+        centerTargetMapView()
+    }
+    
+    func centerTargetMapView(){
+        //self.locationMapView = MTMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        self.locationMapView.daumMapApiKey = "2dd20729644a15718c16758fa84963e8"
+        self.locationMapView.delegate = self
+        self.locationMapView.baseMapType = .standard
+        
+        if(self.currentlocation?.c_barrier == 1 || self.currentlocation?.c_barrier == 2)
+        {
+            let item = MTMapPOIItem()
+            item.itemName = self.currentlocation?.name
+            item.customImageName = "c_pin"
+            item.markerType = .customImage
+            item.mapPoint = MTMapPoint(geoCoord: .init(latitude: (self.currentlocation?.latitude)!, longitude: (self.currentlocation?.longitude)!))
+            item.showAnimationType = .noAnimation
+            item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
+            self.locationMapView.add(item)
+        } else if(self.currentlocation?.c_barrier == 3)
+        {
+            let item = MTMapPOIItem()
+            item.itemName = self.currentlocation?.name
+            item.customImageName = "w_pin"
+            item.markerType = .customImage
+            item.mapPoint = MTMapPoint(geoCoord: .init(latitude: (self.currentlocation?.latitude)!, longitude: (self.currentlocation?.longitude)!))
+            item.showAnimationType = .noAnimation
+            item.customImageAnchorPointOffset = .init(offsetX: 30, offsetY: 0)    // 마커 위치 조정
+            self.locationMapView.add(item)
+        }
+        self.locationMapView.fitAreaToShowAllPOIItems()
+
     }
 
     override func didReceiveMemoryWarning() {

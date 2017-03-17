@@ -45,34 +45,85 @@ class Location{
         if let category_temp:String = info["category"] as? String{
             category = category_temp
         }
-        created_at = info["created_at"] as! String
-        comment = info["comment"] as! [String]
-        user = info["user"] as! String
-        name = info["name"] as! String
-        address = info["address"] as! String
-        address_new = info["address_new"] as! String
-        phone_number = info["phone_number"] as! String
-        latitude = Double(info["latitude"] as! String)!
-        longitude = Double(info["longitude"] as! String)!
-        c_barrier = info["c_barrier"] as! Int
-        c_floor = info["c_floor"] as! Int
-        c_elevator_exist = info["c_elevator_exist"] as! Int
-        c_elevator_capacity = info["c_elevator_capacity"] as! Int
-        c_chair_movable = info["c_chair_movable"] as! Int
-        c_toilet_available = info["c_toilet_available"] as! Int
-        c_handicapped_toilet = info["c_handicapped_toilet"] as! Int
-        c_parking_lot_exist = info["c_parking_lot_exist"] as! Int
-        c_handicapped_parking_lot = info["c_handicapped_parking_lot"] as! Int
+        if let _:String = info["created_at"] as? String{
+            created_at = info["created_at"] as! String
+        }
+        if let _:[String] = info["comment"] as? [String]{
+            comment = info["comment"] as! [String]
+        }
+        if let _:String = info["user"] as? String{
+            user = info["user"] as! String
+        }
+        if let _:String = info["name"] as? String{
+            name = info["name"] as! String
+        }
+        if let _:String = info["address"] as? String{
+            address = info["address"] as! String
+        }
+        if let _:String = info["address_new"] as? String{
+            address_new = info["address_new"] as! String
+        }
+        if let _:String = info["phone_number"] as? String{
+            phone_number = info["phone_number"] as! String
+        }
+        if let _:String = info["latitude"] as? String{
+            latitude = Double(info["latitude"] as! String)!
+        }
+        if let _:String = info["longitude"] as? String{
+            longitude = Double(info["longitude"] as! String)!
+        }
+        if let _:Int = info["c_barrier"] as? Int{
+            c_barrier = info["c_barrier"] as! Int
+        }
+        if let _:Int = info["c_floor"] as? Int{
+            c_floor = info["c_floor"] as! Int
+        }
+        if let _:Int = info["c_elevator_exist"] as? Int{
+            c_elevator_capacity = info["c_elevator_exist"] as! Int
+        }
+        if let _:Int = info["c_elevator_capacity"] as? Int{
+            c_elevator_capacity = info["c_elevator_capacity"] as! Int
+        }
+        
+        if let _:Int = info["c_chair_movable"] as? Int{
+            c_chair_movable = info["c_chair_movable"] as! Int
+        }
+        if let _:Int = info["c_toilet_available"] as? Int{
+            c_toilet_available = info["c_toilet_available"] as! Int
+        }
+        if let _:Int = info["c_handicapped_toilet"] as? Int{
+            c_handicapped_toilet = info["c_handicapped_toilet"] as! Int
+        }
+        if let _:Int = info["c_parking_lot_exist"] as? Int{
+            c_parking_lot_exist = info["c_parking_lot_exist"] as! Int
+        }
+        if let _:Int = info["c_handicapped_parking_lot"] as? Int{
+            c_handicapped_parking_lot = info["c_handicapped_parking_lot"] as! Int
+        }
         if let extra_info_temp:String = info["extra_info"] as? String{
             extra_info = extra_info_temp
         }
-        p_entrance = info["p_entrance"] as! String
-        p_interior = info["p_interior"] as! String
-        p_extra_pic1 = info["p_extra_pic1"] as! String
-        p_extra_pic2 = info["p_extra_pic2"] as! String
-        p_extra_pic3 = info["p_extra_pic3"] as! String
-        p_extra_pic4 = info["p_extra_pic4"] as! String
-        p_extra_pic5 = info["p_extra_pic5"] as! String
+        if let _:String = info["p_entrance"] as? String{
+            p_entrance = info["p_entrance"] as! String
+        }
+        if let _:String = info["p_interior"] as? String{
+            p_interior = info["p_interior"] as! String
+        }
+        if let _:String = info["p_extra_pic1"] as? String{
+            p_extra_pic1 = info["p_extra_pic1"] as! String
+        }
+        if let _:String = info["p_extra_pic2"] as? String{
+            p_extra_pic2 = info["p_extra_pic2"] as! String
+        }
+        if let _:String = info["p_extra_pic3"] as? String{
+            p_extra_pic3 = info["p_extra_pic3"] as! String
+        }
+        if let _:String = info["p_extra_pic4"] as? String{
+            p_extra_pic4 = info["p_extra_pic4"] as! String
+        }
+        if let _:String = info["p_extra_pic5"] as? String{
+            p_extra_pic5 = info["p_extra_pic5"] as! String
+        }
     }
     
     
