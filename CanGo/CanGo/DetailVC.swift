@@ -9,7 +9,7 @@
 import UIKit
 import PopupDialog
 
-class DetailVC: UIViewController,MTMapViewDelegate {
+class DetailVC: UIViewController,MTMapViewDelegate,UITableViewDataSource,UITableViewDelegate {
     //MTMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
 
     var currentlocation:Location? = nil
@@ -56,19 +56,19 @@ class DetailVC: UIViewController,MTMapViewDelegate {
         new_popup.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         self.present(new_popup, animated: true, completion: nil)
     }
+    
     @IBAction func exit(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         self.name.text = currentlocation!.name
         category.text = currentlocation!.category
         address.text = currentlocation!.address
         address_new.text = currentlocation!.address_new
         extra.text = currentlocation!.extra_info
-        
         
         //구체적인 image control
 
@@ -128,11 +128,6 @@ class DetailVC: UIViewController,MTMapViewDelegate {
             }
         }
         
-        
-//        for i in 0..<list.count{
-//            list[i].image = UIImage(named: "app_0_\(i+12)_1")
-//        }
-        
         for i in 0..<8{
             let small:UIImageView = UIImageView()
             small.frame.size = list[i].frame.size
@@ -143,12 +138,13 @@ class DetailVC: UIViewController,MTMapViewDelegate {
         
         iconscroll.contentSize = CGSize(width:12*list[0].frame.size.width, height:list[0].frame.size.height)
         iconscroll.isScrollEnabled = true
-        // Do any additional setup after loading the view.
-        
-        
         
         centerTargetMapView()
         addExtraPictures()
+        self.comments.dataSource = self
+        self.comments.delegate = self
+        self.comments.tableFooterView = UIView(frame: .zero) // 빈 cell 지우는 코드
+        self.comments.separatorStyle = UITableViewCellSeparatorStyle.none // cell 간의 border 지우는 코드
     }
     
     func addExtraPictures(){
@@ -165,7 +161,6 @@ class DetailVC: UIViewController,MTMapViewDelegate {
     }
     
     func centerTargetMapView(){
-        //self.locationMapView = MTMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
         self.locationMapView.daumMapApiKey = "2dd20729644a15718c16758fa84963e8"
         self.locationMapView.delegate = self
         self.locationMapView.baseMapType = .standard
@@ -192,7 +187,21 @@ class DetailVC: UIViewController,MTMapViewDelegate {
             self.locationMapView.add(item)
         }
         self.locationMapView.fitAreaToShowAllPOIItems()
-
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1// 해당 코드로 바꿔주어야하나, comment를 가지고 있는 cafe 데이터가 없음 --> (self.currentlocation?.comment.count)!
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:CommentTableViewCell = tableView.dequeueReusableCell(withIdentifier: "COMMENT", for: indexPath) as! CommentTableViewCell
+        cell.userLabel.text = "USER_ID"
+        cell.dateLabel.text = "2017.3.17 11:07"
+        cell.commentLabel.text = "역 이름을 고쳤으면 좋겠음."
+        
+        return cell
     }
 
     override func didReceiveMemoryWarning() {

@@ -44,6 +44,7 @@
 		59C0BA651E17D25400EACD92 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA641E17D25400EACD92 /* QuartzCore.framework */; };
 		59C0BA671E17D26200EACD92 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA661E17D26200EACD92 /* SystemConfiguration.framework */; };
 		59C0BA691E17D26B00EACD92 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C0BA681E17D26B00EACD92 /* OpenGLES.framework */; };
+		8B161EDD1E7B7B2F00934A22 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B161EDC1E7B7B2F00934A22 /* CommentTableViewCell.swift */; };
 		967569069FDA859109C00649 /* Pods_CanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B16366ECD24285163B821 /* Pods_CanGo.framework */; };
 		F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104F3D81E17DD68000D5DB0 /* MainViewController.swift */; };
 		F1083E361E160626000BA60D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1083E351E160626000BA60D /* LoginVC.swift */; };
@@ -121,6 +122,7 @@
 		59C0BA641E17D25400EACD92 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		59C0BA661E17D26200EACD92 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		59C0BA681E17D26B00EACD92 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8B161EDC1E7B7B2F00934A22 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		DD9B16366ECD24285163B821 /* Pods_CanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F104F3D81E17DD68000D5DB0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F1083E351E160626000BA60D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				F1A42D501E15F0FF001AB20F /* Main.storyboard */,
 				F15DD9791E1A87C10046C59B /* FindPwdVC.swift */,
 				F191FFEA1E1BF12600644F2A /* DetailVC.swift */,
+				8B161EDC1E7B7B2F00934A22 /* CommentTableViewCell.swift */,
 				F1A42D531E15F0FF001AB20F /* Assets.xcassets */,
 				F1A42D551E15F0FF001AB20F /* LaunchScreen.storyboard */,
 				F1A42D581E15F0FF001AB20F /* Info.plist */,
@@ -556,6 +559,7 @@
 				F1C6872D1E3EED24005C6382 /* AdditionalVC.swift in Sources */,
 				F191FFEB1E1BF12600644F2A /* DetailVC.swift in Sources */,
 				F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */,
+				8B161EDD1E7B7B2F00934A22 /* CommentTableViewCell.swift in Sources */,
 				F1DA0BE31E191F3F00A342F2 /* ViewController.swift in Sources */,
 				598CDF661E301A5400396E8E /* SWRevealViewController.m in Sources */,
 				F16223771E18CA7000FA9C03 /* Location.swift in Sources */,

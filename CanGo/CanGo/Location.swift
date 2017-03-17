@@ -36,7 +36,6 @@ class Location{
     var p_extra_pic1:String = ""
     var p_extra_pic2:String = ""
     var p_extra_pic3:String = ""
-    
     var p_extra_pic4:String = ""
     var p_extra_pic5:String = ""
     var p_extra_pics:[String] = []
@@ -50,6 +49,9 @@ class Location{
             created_at = info["created_at"] as! String
         }
         if let _:[String] = info["comment"] as? [String]{
+            if (info["comment"] as! [String]).count > 0{
+                print("comment > 1")
+            }
             comment = info["comment"] as! [String]
         }
         if let _:String = info["user"] as? String{
