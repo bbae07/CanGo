@@ -148,6 +148,20 @@ class DetailVC: UIViewController,MTMapViewDelegate {
         
         
         centerTargetMapView()
+        addExtraPictures()
+    }
+    
+    func addExtraPictures(){
+        let pictures:[String] = (self.currentlocation?.p_extra_pics)!
+        let height = self.images.frame.size.height
+        for i in 0..<pictures.count{
+            let imageView:UIImageView = UIImageView()
+            imageView.frame = CGRect(x:CGFloat(i)*height, y: CGFloat(0), width: height, height:height)
+            imageView.image = UIImage(named:pictures[i])
+            self.images.addSubview(imageView)
+        }
+        self.images.contentSize = CGSize(width:CGFloat(pictures.count)*height, height:height)
+        self.images.isScrollEnabled = true
     }
     
     func centerTargetMapView(){

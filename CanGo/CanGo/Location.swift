@@ -39,6 +39,7 @@ class Location{
     
     var p_extra_pic4:String = ""
     var p_extra_pic5:String = ""
+    var p_extra_pics:[String] = []
     
     init(info:NSDictionary){
         id = info["id"] as! Int
@@ -111,18 +112,23 @@ class Location{
         }
         if let _:String = info["p_extra_pic1"] as? String{
             p_extra_pic1 = info["p_extra_pic1"] as! String
+            p_extra_pics.append(p_extra_pic1)
         }
         if let _:String = info["p_extra_pic2"] as? String{
             p_extra_pic2 = info["p_extra_pic2"] as! String
+            p_extra_pics.append(p_extra_pic2)
         }
         if let _:String = info["p_extra_pic3"] as? String{
             p_extra_pic3 = info["p_extra_pic3"] as! String
+            p_extra_pics.append(p_extra_pic3)
         }
         if let _:String = info["p_extra_pic4"] as? String{
             p_extra_pic4 = info["p_extra_pic4"] as! String
+            p_extra_pics.append(p_extra_pic4)
         }
         if let _:String = info["p_extra_pic5"] as? String{
             p_extra_pic5 = info["p_extra_pic5"] as! String
+            p_extra_pics.append(p_extra_pic4)
         }
     }
     

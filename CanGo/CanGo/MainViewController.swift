@@ -66,6 +66,7 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
         self.view.addSubview(leftbutton)
         self.view.addSubview(searchbar)
         // Do any additional setup after loading the view.
+        self.searchBarSearchButtonClicked(self.searchbar)
     }
     
     override func didReceiveMemoryWarning() {
@@ -81,7 +82,8 @@ class MainViewController: UIViewController,MTMapViewDelegate, UISearchBarDelegat
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.endEditing(true)
-        Server.manager.search(place: searchBar.text!, completion: {
+        //Server.manager.search(place: searchBar.text!, completion: {
+        Server.manager.search(place: "카페", completion: {
             result in
             
             var c = 0
