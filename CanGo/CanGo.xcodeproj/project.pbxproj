@@ -50,6 +50,9 @@
 		F1083E391E160A45000BA60D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E381E160A45000BA60D /* UIKit.framework */; };
 		F1083E3B1E160A4D000BA60D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1083E3A1E160A4D000BA60D /* Foundation.framework */; };
 		F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118C9CE1E17EACB0069523F /* SignUpVC.swift */; };
+		F15AE0C91E7B7A1100A89C24 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AE0C81E7B7A1100A89C24 /* FavoritesVC.swift */; };
+		F15AE0CB1E7B7A2000A89C24 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AE0CA1E7B7A2000A89C24 /* MyVC.swift */; };
+		F15AE0CD1E7B7A2B00A89C24 /* RankingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AE0CC1E7B7A2B00A89C24 /* RankingVC.swift */; };
 		F15DD97A1E1A87C10046C59B /* FindPwdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15DD9791E1A87C10046C59B /* FindPwdVC.swift */; };
 		F16223771E18CA7000FA9C03 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16223761E18CA7000FA9C03 /* Location.swift */; };
 		F191FFEB1E1BF12600644F2A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F191FFEA1E1BF12600644F2A /* DetailVC.swift */; };
@@ -127,6 +130,9 @@
 		F1083E381E160A45000BA60D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1083E3A1E160A4D000BA60D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F118C9CE1E17EACB0069523F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F15AE0C81E7B7A1100A89C24 /* FavoritesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		F15AE0CA1E7B7A2000A89C24 /* MyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
+		F15AE0CC1E7B7A2B00A89C24 /* RankingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingVC.swift; sourceTree = "<group>"; };
 		F15DD9791E1A87C10046C59B /* FindPwdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPwdVC.swift; sourceTree = "<group>"; };
 		F16223761E18CA7000FA9C03 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F191FFEA1E1BF12600644F2A /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
@@ -310,6 +316,9 @@
 				F1F6A1AB1E160CD0002D9742 /* Kakao.h */,
 				F16223761E18CA7000FA9C03 /* Location.swift */,
 				59B49C831E5AAB7E000CE107 /* PopUpDialogViewController.swift */,
+				F15AE0C81E7B7A1100A89C24 /* FavoritesVC.swift */,
+				F15AE0CA1E7B7A2000A89C24 /* MyVC.swift */,
+				F15AE0CC1E7B7A2B00A89C24 /* RankingVC.swift */,
 			);
 			path = CanGo;
 			sourceTree = "<group>";
@@ -551,14 +560,17 @@
 				F15DD97A1E1A87C10046C59B /* FindPwdVC.swift in Sources */,
 				59B49C841E5AAB7E000CE107 /* PopUpDialogViewController.swift in Sources */,
 				F1083E361E160626000BA60D /* LoginVC.swift in Sources */,
+				F15AE0CD1E7B7A2B00A89C24 /* RankingVC.swift in Sources */,
 				F1A42D4D1E15F0FF001AB20F /* AppDelegate.swift in Sources */,
 				F1DB79551E17D8A3007A66BB /* Server.swift in Sources */,
+				F15AE0C91E7B7A1100A89C24 /* FavoritesVC.swift in Sources */,
 				F1C6872D1E3EED24005C6382 /* AdditionalVC.swift in Sources */,
 				F191FFEB1E1BF12600644F2A /* DetailVC.swift in Sources */,
 				F118C9CF1E17EACB0069523F /* SignUpVC.swift in Sources */,
 				F1DA0BE31E191F3F00A342F2 /* ViewController.swift in Sources */,
 				598CDF661E301A5400396E8E /* SWRevealViewController.m in Sources */,
 				F16223771E18CA7000FA9C03 /* Location.swift in Sources */,
+				F15AE0CB1E7B7A2000A89C24 /* MyVC.swift in Sources */,
 				F104F3D91E17DD68000D5DB0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
